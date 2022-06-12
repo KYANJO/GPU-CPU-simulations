@@ -1,0 +1,987 @@
+[libsc] This is libsc 2.1.8-e5e9
+[libsc] CPP                      /cm/shared/apps/openacc/18.0/linux86-64/2018/bin/pgcc -Mcpp
+[libsc] CPPFLAGS                 
+[libsc] CC                       mpicc
+[libsc] CFLAGS                   -O2 -Wall
+[libsc] LDFLAGS                  
+[libsc] LIBS                       -lz   
+[libsc] Shared memory node communicator size: 1
+[p4est] This is p4est 2.0.4-0f85
+[p4est] CPP                      /cm/shared/apps/openacc/18.0/linux86-64/2018/bin/pgcc -Mcpp
+[p4est] CPPFLAGS                 
+[p4est] CC                       mpicc
+[p4est] CFLAGS                   -O2 -Wall
+[p4est] LDFLAGS                  
+[p4est] LIBS                     -lgomp   -lz   
+[fclaw] This is ForestClaw 0.1.4648-b87ca-dirty
+[fclaw] CPP                      gcc -E
+[fclaw] CPPFLAGS                 
+[fclaw] F77                      mpif90
+[fclaw] FFLAGS                   -O2
+[fclaw] CC                       mpicc
+[fclaw] CFLAGS                   -O2 -std=c99 -malign-double
+[fclaw] CXX                      mpicxx
+[fclaw] CXXFLAGS                 -O2
+[fclaw] LDFLAGS                  
+[fclaw] FLIBS                     -L/cm/shared/apps/cuda90/toolkit/lib64/ -L/cm/shared/apps/openmpi/gcc/64/2.0.1/lib -L/cm/shared/apps/cuda90/toolkit//lib64/../lib64 -L/cm/shared/apps/slurm/2.6.7/lib64/../lib64 -L/cm/shared/apps/gcc/4.8.1/lib/gcc/x86_64-unknown-linux-gnu/4.8.1 -L/cm/shared/apps/gcc/4.8.1/lib/gcc/x86_64-unknown-linux-gnu/4.8.1/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/cm/shared/apps/cuda90/toolkit//lib64 -L/cm/shared/apps/slurm/2.6.7/lib64/slurm -L/cm/shared/apps/slurm/2.6.7/lib64 -L/cm/shared/apps/gcc/4.8.1/lib/gcc/x86_64-unknown-linux-gnu/4.8.1/../../.. -lcuda -lcudart -lnvToolsExt -lmpi_usempi -lmpi_mpifh -lmpi -lgfortran -lm -lquadmath -lpthread
+[fclaw] LIBS                       -lz -L/cm/shared/apps/cuda90/toolkit/lib64/ -lcuda -lcudart -lnvToolsExt  
+[fclaw] Reading file fclaw_options.ini.
+[fclaw] Options:
+[fclaw]    help                                 false
+[fclaw]    version                              false
+[fclaw]    print-options                        false
+[fclaw]    verbosity                            production
+[fclaw]    lib-verbosity                        essential
+[fclaw]    initial_dt                           0.00125
+[fclaw]    max_cfl                              1
+[fclaw]    desired_cfl                          0.9
+[fclaw]    reduce-cfl                           true
+[fclaw]    use_fixed_dt                         true
+[fclaw]    outstyle                             3
+[fclaw]    tfinal                               0.75
+[fclaw]    nout                                 600
+[fclaw]    nstep                                30
+[fclaw]    advance-one-step                     true
+[fclaw]    outstyle-uses-maxlevel               true
+[fclaw]    subcycle                             true
+[fclaw]    weighted_partition                   false
+[fclaw]    time-sync                            false
+[fclaw]    output                               false
+[fclaw]    gauge-buffer-length                  1
+[fclaw]    tikz-out                             false
+[fclaw]    tikz-figsize                         4 1
+[fclaw]    tikz-plot-prefix                     plot
+[fclaw]    tikz-plot-suffix                     png
+[fclaw]    tikz-mesh-only                       false
+[fclaw]    tikz-plot-fig                        true
+[fclaw]    prefix                               fort
+[fclaw]    vtkspace                             0
+[fclaw]    init_ghostcell                       false
+[fclaw]    minlevel                             0
+[fclaw]    maxlevel                             4
+[fclaw]    regrid_interval                      1
+[fclaw]    refratio                             2
+[fclaw]    smooth-refine                        true
+[fclaw]    smooth-level                         0
+[fclaw]    coarsen-delay                        0
+[fclaw]    refine_threshold                     0.5
+[fclaw]    coarsen_threshold                    0.2
+[fclaw]    run-user-diagnostics                 false
+[fclaw]    compute-error                        false
+[fclaw]    conservation-check                   false
+[fclaw]    report-timing                        true
+[fclaw]    report-timing-verbosity              details
+[fclaw]    ghost_patch_pack_area                true
+[fclaw]    ghost_patch_pack_extra               false
+[fclaw]    ghost_patch_pack_numextrafields      0
+[fclaw]    trapfpe                              false
+[fclaw]    mpi_debug                            false
+[fclaw]    ax                                   0
+[fclaw]    bx                                   2
+[fclaw]    ay                                   0
+[fclaw]    by                                   0.5
+[fclaw]    manifold                             false
+[fclaw]    mi                                   4
+[fclaw]    mj                                   1
+[fclaw]    periodic_x                           false
+[fclaw]    periodic_y                           false
+[fclaw]    scale                                1 1 1
+[fclaw]    shift                                0 0 0
+[fclaw]    phi                                  0
+[fclaw]    theta                                0
+[fclaw]    clawpatch:mx                         32
+[fclaw]    clawpatch:my                         32
+[fclaw]    clawpatch:maux                       0
+[fclaw]    clawpatch:mbc                        2
+[fclaw]    clawpatch:meqn                       4
+[fclaw]    clawpatch:interp_stencil_width       3
+[fclaw]    clawpatch:ghost_patch_pack_aux       true
+[fclaw]    clawpack46:order                     2 2
+[fclaw]    clawpack46:mcapa                     0
+[fclaw]    clawpack46:src_term                  false
+[fclaw]    clawpack46:use-fwaves                false
+[fclaw]    clawpack46:mwaves                    3
+[fclaw]    clawpack46:mthlim                    4 4 4
+[fclaw]    clawpack46:mthbc                     1 1 3 1
+[fclaw]    clawpack46:ascii-out                 true
+[fclaw]    clawpack46:vtk-out                   false
+[fclaw]    clawpack5:order                      2 2
+[fclaw]    clawpack5:mcapa                      0
+[fclaw]    clawpack5:src_term                   true
+[fclaw]    clawpack5:use_fwaves                 false
+[fclaw]    clawpack5:mwaves                     4
+[fclaw]    clawpack5:mthlim                     4 4 4 4
+[fclaw]    clawpack5:mthbc                      1 1 3 1
+[fclaw]    clawpack5:ascii-out                  true
+[fclaw]    clawpack5:vtk-out                    false
+[fclaw]    cudaclaw:order                       2 2
+[fclaw]    cudaclaw:mcapa                       0
+[fclaw]    cudaclaw:src_term                    false
+[fclaw]    cudaclaw:use-fwaves                  false
+[fclaw]    cudaclaw:mwaves                      3
+[fclaw]    cudaclaw:buffer-len                  4096
+[fclaw]    cudaclaw:mthlim                      4 4 4
+[fclaw]    cudaclaw:mthbc                       1 1 3 1
+[fclaw]    cudaclaw:ascii-out                   true
+[fclaw]    cudaclaw:vtk-out                     false
+[fclaw]    user:idisc                           2
+[fclaw]    user:gamma                           1.4
+[fclaw]    user:x0                              0.5
+[fclaw]    user:y0                              0
+[fclaw]    user:r0                              0.2
+[fclaw]    user:rhoin                           0.1
+[fclaw]    user:pinf                            5
+[fclaw]    user:claw-version                    4
+[fclaw]    user:cuda                            true
+[fclaw] Arguments: none
+[p4est 0] Local minimum/maximum levels:  0  0
+[p4est] Global minimum/maximum levels:  0  0
+[p4est 0] Patches on level  0:         4
+[fclaw] Block-size (FC2D_CUDACLAW_BLOCK_SIZE) set to 96
+[fclaw] Rank  0 (node01) assigned to GPU 0  (GeForce GTX TITAN X)
+[fclaw] Max threads set to 0
+[fclaw] Time step    0  at time   0.00000000e+00
+
+[fclaw] Level 4 (1-4) step     1 : dt =    1.250e-03; maxcfl (step) =    0.299; Final time =       0.0013
+[fclaw] Level 4 (1-4) step     2 : dt =    1.250e-03; maxcfl (step) =    0.299; Final time =       0.0025
+[fclaw] Level 4 (1-4) step     3 : dt =    1.250e-03; maxcfl (step) =    0.299; Final time =       0.0037
+[fclaw] Level 4 (1-4) step     4 : dt =    1.250e-03; maxcfl (step) =    0.299; Final time =       0.0050
+[fclaw] Level 4 (1-4) step     5 : dt =    1.250e-03; maxcfl (step) =    0.299; Final time =       0.0063
+[fclaw] Level 4 (1-4) step     6 : dt =    1.250e-03; maxcfl (step) =    0.299; Final time =       0.0075
+[fclaw] Level 4 (1-4) step     7 : dt =    1.250e-03; maxcfl (step) =    0.299; Final time =       0.0088
+[fclaw] Level 4 (1-4) step     8 : dt =    1.250e-03; maxcfl (step) =    0.299; Final time =       0.0100
+[fclaw] Level 4 (1-4) step     9 : dt =    1.250e-03; maxcfl (step) =    0.299; Final time =       0.0112
+[fclaw] Level 4 (1-4) step    10 : dt =    1.250e-03; maxcfl (step) =    0.299; Final time =       0.0125
+[fclaw] Level 4 (1-4) step    11 : dt =    1.250e-03; maxcfl (step) =    0.299; Final time =       0.0137
+[fclaw] Level 4 (1-4) step    12 : dt =    1.250e-03; maxcfl (step) =    0.299; Final time =       0.0150
+[fclaw] Level 4 (1-4) step    13 : dt =    1.250e-03; maxcfl (step) =    0.299; Final time =       0.0162
+[fclaw] Level 4 (1-4) step    14 : dt =    1.250e-03; maxcfl (step) =    0.299; Final time =       0.0175
+[fclaw] Level 4 (1-4) step    15 : dt =    1.250e-03; maxcfl (step) =    0.299; Final time =       0.0187
+[fclaw] Level 4 (1-4) step    16 : dt =    1.250e-03; maxcfl (step) =    0.299; Final time =       0.0200
+[fclaw] Level 4 (1-4) step    17 : dt =    1.250e-03; maxcfl (step) =    0.299; Final time =       0.0213
+[fclaw] Level 4 (1-4) step    18 : dt =    1.250e-03; maxcfl (step) =    0.299; Final time =       0.0225
+[fclaw] Level 4 (1-4) step    19 : dt =    1.250e-03; maxcfl (step) =    0.299; Final time =       0.0238
+[fclaw] Level 4 (1-4) step    20 : dt =    1.250e-03; maxcfl (step) =    0.299; Final time =       0.0250
+[fclaw] Level 4 (1-4) step    21 : dt =    1.250e-03; maxcfl (step) =    0.299; Final time =       0.0263
+[fclaw] Level 4 (1-4) step    22 : dt =    1.250e-03; maxcfl (step) =    0.299; Final time =       0.0275
+[fclaw] Level 4 (1-4) step    23 : dt =    1.250e-03; maxcfl (step) =    0.299; Final time =       0.0288
+[fclaw] Level 4 (1-4) step    24 : dt =    1.250e-03; maxcfl (step) =    0.299; Final time =       0.0300
+[fclaw] Level 4 (1-4) step    25 : dt =    1.250e-03; maxcfl (step) =    0.299; Final time =       0.0313
+[fclaw] Level 4 (1-4) step    26 : dt =    1.250e-03; maxcfl (step) =    0.299; Final time =       0.0325
+[fclaw] Level 4 (1-4) step    27 : dt =    1.250e-03; maxcfl (step) =    0.299; Final time =       0.0338
+[fclaw] Level 4 (1-4) step    28 : dt =    1.250e-03; maxcfl (step) =    0.299; Final time =       0.0350
+[fclaw] Level 4 (1-4) step    29 : dt =    1.250e-03; maxcfl (step) =    0.299; Final time =       0.0363
+[fclaw] Level 4 (1-4) step    30 : dt =    1.250e-03; maxcfl (step) =    0.299; Final time =       0.0375
+[fclaw] Time step    1  at time   3.75000000e-02
+
+[fclaw] Level 4 (1-4) step    31 : dt =    1.250e-03; maxcfl (step) =    0.299; Final time =       0.0388
+[fclaw] Level 4 (1-4) step    32 : dt =    1.250e-03; maxcfl (step) =    0.305; Final time =       0.0400
+[fclaw] Level 4 (1-4) step    33 : dt =    1.250e-03; maxcfl (step) =    0.356; Final time =       0.0413
+[fclaw] Level 4 (1-4) step    34 : dt =    1.250e-03; maxcfl (step) =    0.531; Final time =       0.0425
+[fclaw] Level 4 (1-4) step    35 : dt =    1.250e-03; maxcfl (step) =    0.533; Final time =       0.0438
+[fclaw] Level 4 (1-4) step    36 : dt =    1.250e-03; maxcfl (step) =    0.534; Final time =       0.0450
+[fclaw] Level 4 (1-4) step    37 : dt =    1.250e-03; maxcfl (step) =    0.533; Final time =       0.0463
+[fclaw] Level 4 (1-4) step    38 : dt =    1.250e-03; maxcfl (step) =    0.534; Final time =       0.0475
+[fclaw] Level 4 (1-4) step    39 : dt =    1.250e-03; maxcfl (step) =    0.535; Final time =       0.0488
+[fclaw] Level 4 (1-4) step    40 : dt =    1.250e-03; maxcfl (step) =    0.533; Final time =       0.0500
+[fclaw] Level 4 (1-4) step    41 : dt =    1.250e-03; maxcfl (step) =    0.536; Final time =       0.0513
+[fclaw] Level 4 (1-4) step    42 : dt =    1.250e-03; maxcfl (step) =    0.536; Final time =       0.0525
+[fclaw] Level 4 (1-4) step    43 : dt =    1.250e-03; maxcfl (step) =    0.536; Final time =       0.0538
+[fclaw] Level 4 (1-4) step    44 : dt =    1.250e-03; maxcfl (step) =    0.537; Final time =       0.0550
+[fclaw] Level 4 (1-4) step    45 : dt =    1.250e-03; maxcfl (step) =    0.537; Final time =       0.0563
+[fclaw] Level 4 (1-4) step    46 : dt =    1.250e-03; maxcfl (step) =    0.553; Final time =       0.0575
+[fclaw] Level 4 (1-4) step    47 : dt =    1.250e-03; maxcfl (step) =    0.538; Final time =       0.0588
+[fclaw] Level 4 (1-4) step    48 : dt =    1.250e-03; maxcfl (step) =    0.538; Final time =       0.0600
+[fclaw] Level 4 (1-4) step    49 : dt =    1.250e-03; maxcfl (step) =    0.539; Final time =       0.0613
+[fclaw] Level 4 (1-4) step    50 : dt =    1.250e-03; maxcfl (step) =    0.538; Final time =       0.0625
+[fclaw] Level 4 (1-4) step    51 : dt =    1.250e-03; maxcfl (step) =    0.540; Final time =       0.0638
+[fclaw] Level 4 (1-4) step    52 : dt =    1.250e-03; maxcfl (step) =    0.540; Final time =       0.0650
+[fclaw] Level 4 (1-4) step    53 : dt =    1.250e-03; maxcfl (step) =    0.540; Final time =       0.0663
+[fclaw] Level 4 (1-4) step    54 : dt =    1.250e-03; maxcfl (step) =    0.541; Final time =       0.0675
+[fclaw] Level 4 (1-4) step    55 : dt =    1.250e-03; maxcfl (step) =    0.541; Final time =       0.0688
+[fclaw] Level 4 (1-4) step    56 : dt =    1.250e-03; maxcfl (step) =    0.541; Final time =       0.0700
+[fclaw] Level 4 (1-4) step    57 : dt =    1.250e-03; maxcfl (step) =    0.540; Final time =       0.0713
+[fclaw] Level 4 (1-4) step    58 : dt =    1.250e-03; maxcfl (step) =    0.542; Final time =       0.0725
+[fclaw] Level 4 (1-4) step    59 : dt =    1.250e-03; maxcfl (step) =    0.542; Final time =       0.0738
+[fclaw] Level 4 (1-4) step    60 : dt =    1.250e-03; maxcfl (step) =    0.542; Final time =       0.0750
+[fclaw] Time step    2  at time   7.50000000e-02
+
+[fclaw] Level 4 (1-4) step    61 : dt =    1.250e-03; maxcfl (step) =    0.543; Final time =       0.0763
+[fclaw] Level 4 (1-4) step    62 : dt =    1.250e-03; maxcfl (step) =    0.542; Final time =       0.0775
+[fclaw] Level 4 (1-4) step    63 : dt =    1.250e-03; maxcfl (step) =    0.544; Final time =       0.0788
+[fclaw] Level 4 (1-4) step    64 : dt =    1.250e-03; maxcfl (step) =    0.544; Final time =       0.0800
+[fclaw] Level 4 (1-4) step    65 : dt =    1.250e-03; maxcfl (step) =    0.545; Final time =       0.0813
+[fclaw] Level 4 (1-4) step    66 : dt =    1.250e-03; maxcfl (step) =    0.544; Final time =       0.0825
+[fclaw] Level 4 (1-4) step    67 : dt =    1.250e-03; maxcfl (step) =    0.545; Final time =       0.0838
+[fclaw] Level 4 (1-4) step    68 : dt =    1.250e-03; maxcfl (step) =    0.546; Final time =       0.0850
+[fclaw] Level 4 (1-4) step    69 : dt =    1.250e-03; maxcfl (step) =    0.546; Final time =       0.0863
+[fclaw] Level 4 (1-4) step    70 : dt =    1.250e-03; maxcfl (step) =    0.546; Final time =       0.0875
+[fclaw] Level 4 (1-4) step    71 : dt =    1.250e-03; maxcfl (step) =    0.546; Final time =       0.0888
+[fclaw] Level 4 (1-4) step    72 : dt =    1.250e-03; maxcfl (step) =    0.546; Final time =       0.0900
+[fclaw] Level 4 (1-4) step    73 : dt =    1.250e-03; maxcfl (step) =    0.548; Final time =       0.0913
+[fclaw] Level 4 (1-4) step    74 : dt =    1.250e-03; maxcfl (step) =    0.548; Final time =       0.0925
+[fclaw] Level 4 (1-4) step    75 : dt =    1.250e-03; maxcfl (step) =    0.548; Final time =       0.0938
+[fclaw] Level 4 (1-4) step    76 : dt =    1.250e-03; maxcfl (step) =    0.547; Final time =       0.0950
+[fclaw] Level 4 (1-4) step    77 : dt =    1.250e-03; maxcfl (step) =    0.549; Final time =       0.0963
+[fclaw] Level 4 (1-4) step    78 : dt =    1.250e-03; maxcfl (step) =    0.551; Final time =       0.0975
+[fclaw] Level 4 (1-4) step    79 : dt =    1.250e-03; maxcfl (step) =    0.550; Final time =       0.0988
+[fclaw] Level 4 (1-4) step    80 : dt =    1.250e-03; maxcfl (step) =    0.551; Final time =       0.1000
+[fclaw] Level 4 (1-4) step    81 : dt =    1.250e-03; maxcfl (step) =    0.550; Final time =       0.1013
+[fclaw] Level 4 (1-4) step    82 : dt =    1.250e-03; maxcfl (step) =    0.550; Final time =       0.1025
+[fclaw] Level 4 (1-4) step    83 : dt =    1.250e-03; maxcfl (step) =    0.550; Final time =       0.1038
+[fclaw] Level 4 (1-4) step    84 : dt =    1.250e-03; maxcfl (step) =    0.551; Final time =       0.1050
+[fclaw] Level 4 (1-4) step    85 : dt =    1.250e-03; maxcfl (step) =    0.550; Final time =       0.1063
+[fclaw] Level 4 (1-4) step    86 : dt =    1.250e-03; maxcfl (step) =    0.552; Final time =       0.1075
+[fclaw] Level 4 (1-4) step    87 : dt =    1.250e-03; maxcfl (step) =    0.552; Final time =       0.1088
+[fclaw] Level 4 (1-4) step    88 : dt =    1.250e-03; maxcfl (step) =    0.552; Final time =       0.1100
+[fclaw] Level 4 (1-4) step    89 : dt =    1.250e-03; maxcfl (step) =    0.553; Final time =       0.1113
+[fclaw] Level 4 (1-4) step    90 : dt =    1.250e-03; maxcfl (step) =    0.552; Final time =       0.1125
+[fclaw] Time step    3  at time   1.12500000e-01
+
+[fclaw] Level 4 (1-4) step    91 : dt =    1.250e-03; maxcfl (step) =    0.554; Final time =       0.1138
+[fclaw] Level 4 (1-4) step    92 : dt =    1.250e-03; maxcfl (step) =    0.554; Final time =       0.1150
+[fclaw] Level 4 (1-4) step    93 : dt =    1.250e-03; maxcfl (step) =    0.554; Final time =       0.1163
+[fclaw] Level 4 (1-4) step    94 : dt =    1.250e-03; maxcfl (step) =    0.553; Final time =       0.1175
+[fclaw] Level 4 (1-4) step    95 : dt =    1.250e-03; maxcfl (step) =    0.555; Final time =       0.1188
+[fclaw] Level 4 (1-4) step    96 : dt =    1.250e-03; maxcfl (step) =    0.555; Final time =       0.1200
+[fclaw] Level 4 (1-4) step    97 : dt =    1.250e-03; maxcfl (step) =    0.555; Final time =       0.1213
+[fclaw] Level 4 (1-4) step    98 : dt =    1.250e-03; maxcfl (step) =    0.556; Final time =       0.1225
+[fclaw] Level 4 (1-4) step    99 : dt =    1.250e-03; maxcfl (step) =    0.556; Final time =       0.1238
+[fclaw] Level 4 (1-4) step   100 : dt =    1.250e-03; maxcfl (step) =    0.556; Final time =       0.1250
+[fclaw] Level 4 (1-4) step   101 : dt =    1.250e-03; maxcfl (step) =    0.556; Final time =       0.1263
+[fclaw] Level 4 (1-4) step   102 : dt =    1.250e-03; maxcfl (step) =    0.557; Final time =       0.1275
+[fclaw] Level 4 (1-4) step   103 : dt =    1.250e-03; maxcfl (step) =    0.556; Final time =       0.1288
+[fclaw] Level 4 (1-4) step   104 : dt =    1.250e-03; maxcfl (step) =    0.558; Final time =       0.1300
+[fclaw] Level 4 (1-4) step   105 : dt =    1.250e-03; maxcfl (step) =    0.557; Final time =       0.1313
+[fclaw] Level 4 (1-4) step   106 : dt =    1.250e-03; maxcfl (step) =    0.558; Final time =       0.1325
+[fclaw] Level 4 (1-4) step   107 : dt =    1.250e-03; maxcfl (step) =    0.558; Final time =       0.1338
+[fclaw] Level 4 (1-4) step   108 : dt =    1.250e-03; maxcfl (step) =    0.557; Final time =       0.1350
+[fclaw] Level 4 (1-4) step   109 : dt =    1.250e-03; maxcfl (step) =    0.559; Final time =       0.1363
+[fclaw] Level 4 (1-4) step   110 : dt =    1.250e-03; maxcfl (step) =    0.559; Final time =       0.1375
+[fclaw] Level 4 (1-4) step   111 : dt =    1.250e-03; maxcfl (step) =    0.559; Final time =       0.1388
+[fclaw] Level 4 (1-4) step   112 : dt =    1.250e-03; maxcfl (step) =    0.558; Final time =       0.1400
+[fclaw] Level 4 (1-4) step   113 : dt =    1.250e-03; maxcfl (step) =    0.560; Final time =       0.1413
+[fclaw] Level 4 (1-4) step   114 : dt =    1.250e-03; maxcfl (step) =    0.559; Final time =       0.1425
+[fclaw] Level 4 (1-4) step   115 : dt =    1.250e-03; maxcfl (step) =    0.560; Final time =       0.1438
+[fclaw] Level 4 (1-4) step   116 : dt =    1.250e-03; maxcfl (step) =    0.560; Final time =       0.1450
+[fclaw] Level 4 (1-4) step   117 : dt =    1.250e-03; maxcfl (step) =    0.558; Final time =       0.1463
+[fclaw] Level 4 (1-4) step   118 : dt =    1.250e-03; maxcfl (step) =    0.559; Final time =       0.1475
+[fclaw] Level 4 (1-4) step   119 : dt =    1.250e-03; maxcfl (step) =    0.558; Final time =       0.1488
+[fclaw] Level 4 (1-4) step   120 : dt =    1.250e-03; maxcfl (step) =    0.556; Final time =       0.1500
+[fclaw] Time step    4  at time   1.50000000e-01
+
+[fclaw] Level 4 (1-4) step   121 : dt =    1.250e-03; maxcfl (step) =    0.542; Final time =       0.1513
+[fclaw] Level 4 (1-4) step   122 : dt =    1.250e-03; maxcfl (step) =    0.539; Final time =       0.1525
+[fclaw] Level 4 (1-4) step   123 : dt =    1.250e-03; maxcfl (step) =    0.538; Final time =       0.1538
+[fclaw] Level 4 (1-4) step   124 : dt =    1.250e-03; maxcfl (step) =    0.541; Final time =       0.1550
+[fclaw] Level 4 (1-4) step   125 : dt =    1.250e-03; maxcfl (step) =    0.547; Final time =       0.1563
+[fclaw] Level 4 (1-4) step   126 : dt =    1.250e-03; maxcfl (step) =    0.551; Final time =       0.1575
+[fclaw] Level 4 (1-4) step   127 : dt =    1.250e-03; maxcfl (step) =    0.551; Final time =       0.1588
+[fclaw] Level 4 (1-4) step   128 : dt =    1.250e-03; maxcfl (step) =    0.551; Final time =       0.1600
+[fclaw] Level 4 (1-4) step   129 : dt =    1.250e-03; maxcfl (step) =    0.552; Final time =       0.1613
+[fclaw] Level 4 (1-4) step   130 : dt =    1.250e-03; maxcfl (step) =    0.551; Final time =       0.1625
+[fclaw] Level 4 (1-4) step   131 : dt =    1.250e-03; maxcfl (step) =    0.552; Final time =       0.1638
+[fclaw] Level 4 (1-4) step   132 : dt =    1.250e-03; maxcfl (step) =    0.552; Final time =       0.1650
+[fclaw] Level 4 (1-4) step   133 : dt =    1.250e-03; maxcfl (step) =    0.551; Final time =       0.1663
+[fclaw] Level 4 (1-4) step   134 : dt =    1.250e-03; maxcfl (step) =    0.553; Final time =       0.1675
+[fclaw] Level 4 (1-4) step   135 : dt =    1.250e-03; maxcfl (step) =    0.551; Final time =       0.1688
+[fclaw] Level 4 (1-4) step   136 : dt =    1.250e-03; maxcfl (step) =    0.554; Final time =       0.1700
+[fclaw] Level 4 (1-4) step   137 : dt =    1.250e-03; maxcfl (step) =    0.555; Final time =       0.1713
+[fclaw] Level 4 (1-4) step   138 : dt =    1.250e-03; maxcfl (step) =    0.554; Final time =       0.1725
+[fclaw] Level 4 (1-4) step   139 : dt =    1.250e-03; maxcfl (step) =    0.556; Final time =       0.1738
+[fclaw] Level 4 (1-4) step   140 : dt =    1.250e-03; maxcfl (step) =    0.558; Final time =       0.1750
+[fclaw] Level 4 (1-4) step   141 : dt =    1.250e-03; maxcfl (step) =    0.556; Final time =       0.1763
+[fclaw] Level 4 (1-4) step   142 : dt =    1.250e-03; maxcfl (step) =    0.558; Final time =       0.1775
+[fclaw] Level 4 (1-4) step   143 : dt =    1.250e-03; maxcfl (step) =    0.555; Final time =       0.1788
+[fclaw] Level 4 (1-4) step   144 : dt =    1.250e-03; maxcfl (step) =    0.558; Final time =       0.1800
+[fclaw] Level 4 (1-4) step   145 : dt =    1.250e-03; maxcfl (step) =    0.559; Final time =       0.1813
+[fclaw] Level 4 (1-4) step   146 : dt =    1.250e-03; maxcfl (step) =    0.559; Final time =       0.1825
+[fclaw] Level 4 (1-4) step   147 : dt =    1.250e-03; maxcfl (step) =    0.564; Final time =       0.1838
+[fclaw] Level 4 (1-4) step   148 : dt =    1.250e-03; maxcfl (step) =    0.576; Final time =       0.1850
+[fclaw] Level 4 (1-4) step   149 : dt =    1.250e-03; maxcfl (step) =    0.575; Final time =       0.1863
+[fclaw] Level 4 (1-4) step   150 : dt =    1.250e-03; maxcfl (step) =    0.570; Final time =       0.1875
+[fclaw] Time step    5  at time   1.87500000e-01
+
+[fclaw] Level 4 (1-4) step   151 : dt =    1.250e-03; maxcfl (step) =    0.588; Final time =       0.1888
+[fclaw] Level 4 (1-4) step   152 : dt =    1.250e-03; maxcfl (step) =    0.584; Final time =       0.1900
+[fclaw] Level 4 (1-4) step   153 : dt =    1.250e-03; maxcfl (step) =    0.569; Final time =       0.1913
+[fclaw] Level 4 (1-4) step   154 : dt =    1.250e-03; maxcfl (step) =    0.578; Final time =       0.1925
+[fclaw] Level 4 (1-4) step   155 : dt =    1.250e-03; maxcfl (step) =    0.564; Final time =       0.1938
+[fclaw] Level 4 (1-4) step   156 : dt =    1.250e-03; maxcfl (step) =    0.564; Final time =       0.1950
+[fclaw] Level 4 (1-4) step   157 : dt =    1.250e-03; maxcfl (step) =    0.566; Final time =       0.1963
+[fclaw] Level 4 (1-4) step   158 : dt =    1.250e-03; maxcfl (step) =    0.566; Final time =       0.1975
+[fclaw] Level 4 (1-4) step   159 : dt =    1.250e-03; maxcfl (step) =    0.557; Final time =       0.1988
+[fclaw] Level 4 (1-4) step   160 : dt =    1.250e-03; maxcfl (step) =    0.557; Final time =       0.2000
+[fclaw] Level 4 (1-4) step   161 : dt =    1.250e-03; maxcfl (step) =    0.558; Final time =       0.2013
+[fclaw] Level 4 (1-4) step   162 : dt =    1.250e-03; maxcfl (step) =    0.562; Final time =       0.2025
+[fclaw] Level 4 (1-4) step   163 : dt =    1.250e-03; maxcfl (step) =    0.567; Final time =       0.2038
+[fclaw] Level 4 (1-4) step   164 : dt =    1.250e-03; maxcfl (step) =    0.571; Final time =       0.2050
+[fclaw] Level 4 (1-4) step   165 : dt =    1.250e-03; maxcfl (step) =    0.579; Final time =       0.2063
+[fclaw] Level 4 (1-4) step   166 : dt =    1.250e-03; maxcfl (step) =    0.574; Final time =       0.2075
+[fclaw] Level 4 (1-4) step   167 : dt =    1.250e-03; maxcfl (step) =    0.572; Final time =       0.2088
+[fclaw] Level 4 (1-4) step   168 : dt =    1.250e-03; maxcfl (step) =    0.573; Final time =       0.2100
+[fclaw] Level 4 (1-4) step   169 : dt =    1.250e-03; maxcfl (step) =    0.602; Final time =       0.2113
+[fclaw] Level 4 (1-4) step   170 : dt =    1.250e-03; maxcfl (step) =    0.605; Final time =       0.2125
+[fclaw] Level 4 (1-4) step   171 : dt =    1.250e-03; maxcfl (step) =    0.572; Final time =       0.2138
+[fclaw] Level 4 (1-4) step   172 : dt =    1.250e-03; maxcfl (step) =    0.579; Final time =       0.2150
+[fclaw] Level 4 (1-4) step   173 : dt =    1.250e-03; maxcfl (step) =    0.613; Final time =       0.2163
+[fclaw] Level 4 (1-4) step   174 : dt =    1.250e-03; maxcfl (step) =    0.609; Final time =       0.2175
+[fclaw] Level 4 (1-4) step   175 : dt =    1.250e-03; maxcfl (step) =    0.598; Final time =       0.2188
+[fclaw] Level 4 (1-4) step   176 : dt =    1.250e-03; maxcfl (step) =    0.594; Final time =       0.2200
+[fclaw] Level 4 (1-4) step   177 : dt =    1.250e-03; maxcfl (step) =    0.613; Final time =       0.2213
+[fclaw] Level 4 (1-4) step   178 : dt =    1.250e-03; maxcfl (step) =    0.631; Final time =       0.2225
+[fclaw] Level 4 (1-4) step   179 : dt =    1.250e-03; maxcfl (step) =    0.608; Final time =       0.2238
+[fclaw] Level 4 (1-4) step   180 : dt =    1.250e-03; maxcfl (step) =    0.572; Final time =       0.2250
+[fclaw] Time step    6  at time   2.25000000e-01
+
+[fclaw] Level 4 (1-4) step   181 : dt =    1.250e-03; maxcfl (step) =    0.631; Final time =       0.2263
+[fclaw] Level 4 (1-4) step   182 : dt =    1.250e-03; maxcfl (step) =    0.630; Final time =       0.2275
+[fclaw] Level 4 (1-4) step   183 : dt =    1.250e-03; maxcfl (step) =    0.609; Final time =       0.2288
+[fclaw] Level 4 (1-4) step   184 : dt =    1.250e-03; maxcfl (step) =    0.612; Final time =       0.2300
+[fclaw] Level 4 (1-4) step   185 : dt =    1.250e-03; maxcfl (step) =    0.607; Final time =       0.2313
+[fclaw] Level 4 (1-4) step   186 : dt =    1.250e-03; maxcfl (step) =    0.604; Final time =       0.2325
+[fclaw] Level 4 (1-4) step   187 : dt =    1.250e-03; maxcfl (step) =    0.592; Final time =       0.2338
+[fclaw] Level 4 (1-4) step   188 : dt =    1.250e-03; maxcfl (step) =    0.580; Final time =       0.2350
+[fclaw] Level 4 (1-4) step   189 : dt =    1.250e-03; maxcfl (step) =    0.566; Final time =       0.2363
+[fclaw] Level 4 (1-4) step   190 : dt =    1.250e-03; maxcfl (step) =    0.571; Final time =       0.2375
+[fclaw] Level 4 (1-4) step   191 : dt =    1.250e-03; maxcfl (step) =    0.573; Final time =       0.2388
+[fclaw] Level 4 (1-4) step   192 : dt =    1.250e-03; maxcfl (step) =    0.570; Final time =       0.2400
+[fclaw] Level 4 (1-4) step   193 : dt =    1.250e-03; maxcfl (step) =    0.571; Final time =       0.2413
+[fclaw] Level 4 (1-4) step   194 : dt =    1.250e-03; maxcfl (step) =    0.568; Final time =       0.2425
+[fclaw] Level 4 (1-4) step   195 : dt =    1.250e-03; maxcfl (step) =    0.570; Final time =       0.2438
+[fclaw] Level 4 (1-4) step   196 : dt =    1.250e-03; maxcfl (step) =    0.578; Final time =       0.2450
+[fclaw] Level 4 (1-4) step   197 : dt =    1.250e-03; maxcfl (step) =    0.587; Final time =       0.2463
+[fclaw] Level 4 (1-4) step   198 : dt =    1.250e-03; maxcfl (step) =    0.572; Final time =       0.2475
+[fclaw] Level 4 (1-4) step   199 : dt =    1.250e-03; maxcfl (step) =    0.610; Final time =       0.2488
+[fclaw] Level 4 (1-4) step   200 : dt =    1.250e-03; maxcfl (step) =    0.619; Final time =       0.2500
+[fclaw] Level 4 (1-4) step   201 : dt =    1.250e-03; maxcfl (step) =    0.622; Final time =       0.2513
+[fclaw] Level 4 (1-4) step   202 : dt =    1.250e-03; maxcfl (step) =    0.620; Final time =       0.2525
+[fclaw] Level 4 (1-4) step   203 : dt =    1.250e-03; maxcfl (step) =    0.645; Final time =       0.2538
+[fclaw] Level 4 (1-4) step   204 : dt =    1.250e-03; maxcfl (step) =    0.652; Final time =       0.2550
+[fclaw] Level 4 (1-4) step   205 : dt =    1.250e-03; maxcfl (step) =    0.653; Final time =       0.2563
+[fclaw] Level 4 (1-4) step   206 : dt =    1.250e-03; maxcfl (step) =    0.645; Final time =       0.2575
+[fclaw] Level 4 (1-4) step   207 : dt =    1.250e-03; maxcfl (step) =    0.672; Final time =       0.2587
+[fclaw] Level 4 (1-4) step   208 : dt =    1.250e-03; maxcfl (step) =    0.676; Final time =       0.2600
+[fclaw] Level 4 (1-4) step   209 : dt =    1.250e-03; maxcfl (step) =    0.667; Final time =       0.2612
+[fclaw] Level 4 (1-4) step   210 : dt =    1.250e-03; maxcfl (step) =    0.663; Final time =       0.2625
+[fclaw] Time step    7  at time   2.62500000e-01
+
+[fclaw] Level 4 (1-4) step   211 : dt =    1.250e-03; maxcfl (step) =    0.662; Final time =       0.2637
+[fclaw] Level 4 (1-4) step   212 : dt =    1.250e-03; maxcfl (step) =    0.654; Final time =       0.2650
+[fclaw] Level 4 (1-4) step   213 : dt =    1.250e-03; maxcfl (step) =    0.635; Final time =       0.2662
+[fclaw] Level 4 (1-4) step   214 : dt =    1.250e-03; maxcfl (step) =    0.686; Final time =       0.2675
+[fclaw] Level 4 (1-4) step   215 : dt =    1.250e-03; maxcfl (step) =    0.680; Final time =       0.2687
+[fclaw] Level 4 (1-4) step   216 : dt =    1.250e-03; maxcfl (step) =    0.693; Final time =       0.2700
+[fclaw] Level 4 (1-4) step   217 : dt =    1.250e-03; maxcfl (step) =    0.695; Final time =       0.2712
+[fclaw] Level 4 (1-4) step   218 : dt =    1.250e-03; maxcfl (step) =    0.695; Final time =       0.2725
+[fclaw] Level 4 (1-4) step   219 : dt =    1.250e-03; maxcfl (step) =    0.696; Final time =       0.2737
+[fclaw] Level 4 (1-4) step   220 : dt =    1.250e-03; maxcfl (step) =    0.697; Final time =       0.2750
+[fclaw] Level 4 (1-4) step   221 : dt =    1.250e-03; maxcfl (step) =    0.653; Final time =       0.2762
+[fclaw] Level 4 (1-4) step   222 : dt =    1.250e-03; maxcfl (step) =    0.585; Final time =       0.2775
+[fclaw] Level 4 (1-4) step   223 : dt =    1.250e-03; maxcfl (step) =    0.661; Final time =       0.2787
+[fclaw] Level 4 (1-4) step   224 : dt =    1.250e-03; maxcfl (step) =    0.674; Final time =       0.2800
+[fclaw] Level 4 (1-4) step   225 : dt =    1.250e-03; maxcfl (step) =    0.672; Final time =       0.2812
+[fclaw] Level 4 (1-4) step   226 : dt =    1.250e-03; maxcfl (step) =    0.645; Final time =       0.2825
+[fclaw] Level 4 (1-4) step   227 : dt =    1.250e-03; maxcfl (step) =    0.711; Final time =       0.2837
+[fclaw] Level 4 (1-4) step   228 : dt =    1.250e-03; maxcfl (step) =    0.719; Final time =       0.2850
+[fclaw] Level 4 (1-4) step   229 : dt =    1.250e-03; maxcfl (step) =    0.696; Final time =       0.2862
+[fclaw] Level 4 (1-4) step   230 : dt =    1.250e-03; maxcfl (step) =    0.722; Final time =       0.2875
+[fclaw] Level 4 (1-4) step   231 : dt =    1.250e-03; maxcfl (step) =    0.722; Final time =       0.2887
+[fclaw] Level 4 (1-4) step   232 : dt =    1.250e-03; maxcfl (step) =    0.721; Final time =       0.2900
+[fclaw] Level 4 (1-4) step   233 : dt =    1.250e-03; maxcfl (step) =    0.723; Final time =       0.2912
+[fclaw] Level 4 (1-4) step   234 : dt =    1.250e-03; maxcfl (step) =    0.659; Final time =       0.2925
+[fclaw] Level 4 (1-4) step   235 : dt =    1.250e-03; maxcfl (step) =    0.686; Final time =       0.2937
+[fclaw] Level 4 (1-4) step   236 : dt =    1.250e-03; maxcfl (step) =    0.725; Final time =       0.2950
+[fclaw] Level 4 (1-4) step   237 : dt =    1.250e-03; maxcfl (step) =    0.701; Final time =       0.2962
+[fclaw] Level 4 (1-4) step   238 : dt =    1.250e-03; maxcfl (step) =    0.671; Final time =       0.2975
+[fclaw] Level 4 (1-4) step   239 : dt =    1.250e-03; maxcfl (step) =    0.708; Final time =       0.2987
+[fclaw] Level 4 (1-4) step   240 : dt =    1.250e-03; maxcfl (step) =    0.705; Final time =       0.3000
+[fclaw] Time step    8  at time   3.00000000e-01
+
+[fclaw] Level 4 (1-4) step   241 : dt =    1.250e-03; maxcfl (step) =    0.710; Final time =       0.3012
+[fclaw] Level 4 (1-4) step   242 : dt =    1.250e-03; maxcfl (step) =    0.712; Final time =       0.3025
+[fclaw] Level 4 (1-4) step   243 : dt =    1.250e-03; maxcfl (step) =    0.717; Final time =       0.3037
+[fclaw] Level 4 (1-4) step   244 : dt =    1.250e-03; maxcfl (step) =    0.707; Final time =       0.3050
+[fclaw] Level 4 (1-4) step   245 : dt =    1.250e-03; maxcfl (step) =    0.710; Final time =       0.3062
+[fclaw] Level 4 (1-4) step   246 : dt =    1.250e-03; maxcfl (step) =    0.709; Final time =       0.3075
+[fclaw] Level 4 (1-4) step   247 : dt =    1.250e-03; maxcfl (step) =    0.712; Final time =       0.3087
+[fclaw] Level 4 (1-4) step   248 : dt =    1.250e-03; maxcfl (step) =    0.712; Final time =       0.3100
+[fclaw] Level 4 (1-4) step   249 : dt =    1.250e-03; maxcfl (step) =    0.727; Final time =       0.3112
+[fclaw] Level 4 (1-4) step   250 : dt =    1.250e-03; maxcfl (step) =    0.748; Final time =       0.3125
+[fclaw] Level 4 (1-4) step   251 : dt =    1.250e-03; maxcfl (step) =    0.748; Final time =       0.3137
+[fclaw] Level 4 (1-4) step   252 : dt =    1.250e-03; maxcfl (step) =    0.739; Final time =       0.3150
+[fclaw] Level 4 (1-4) step   253 : dt =    1.250e-03; maxcfl (step) =    0.740; Final time =       0.3162
+[fclaw] Level 4 (1-4) step   254 : dt =    1.250e-03; maxcfl (step) =    0.740; Final time =       0.3175
+[fclaw] Level 4 (1-4) step   255 : dt =    1.250e-03; maxcfl (step) =    0.734; Final time =       0.3187
+[fclaw] Level 4 (1-4) step   256 : dt =    1.250e-03; maxcfl (step) =    0.708; Final time =       0.3200
+[fclaw] Level 4 (1-4) step   257 : dt =    1.250e-03; maxcfl (step) =    0.674; Final time =       0.3212
+[fclaw] Level 4 (1-4) step   258 : dt =    1.250e-03; maxcfl (step) =    0.694; Final time =       0.3225
+[fclaw] Level 4 (1-4) step   259 : dt =    1.250e-03; maxcfl (step) =    0.692; Final time =       0.3237
+[fclaw] Level 4 (1-4) step   260 : dt =    1.250e-03; maxcfl (step) =    0.675; Final time =       0.3250
+[fclaw] Level 4 (1-4) step   261 : dt =    1.250e-03; maxcfl (step) =    0.667; Final time =       0.3262
+[fclaw] Level 4 (1-4) step   262 : dt =    1.250e-03; maxcfl (step) =    0.664; Final time =       0.3275
+[fclaw] Level 4 (1-4) step   263 : dt =    1.250e-03; maxcfl (step) =    0.685; Final time =       0.3287
+[fclaw] Level 4 (1-4) step   264 : dt =    1.250e-03; maxcfl (step) =    0.699; Final time =       0.3300
+[fclaw] Level 4 (1-4) step   265 : dt =    1.250e-03; maxcfl (step) =    0.698; Final time =       0.3312
+[fclaw] Level 4 (1-4) step   266 : dt =    1.250e-03; maxcfl (step) =    0.686; Final time =       0.3325
+[fclaw] Level 4 (1-4) step   267 : dt =    1.250e-03; maxcfl (step) =    0.671; Final time =       0.3337
+[fclaw] Level 4 (1-4) step   268 : dt =    1.250e-03; maxcfl (step) =    0.664; Final time =       0.3350
+[fclaw] Level 4 (1-4) step   269 : dt =    1.250e-03; maxcfl (step) =    0.701; Final time =       0.3362
+[fclaw] Level 4 (1-4) step   270 : dt =    1.250e-03; maxcfl (step) =    0.708; Final time =       0.3375
+[fclaw] Time step    9  at time   3.37500000e-01
+
+[fclaw] Level 4 (1-4) step   271 : dt =    1.250e-03; maxcfl (step) =    0.701; Final time =       0.3387
+[fclaw] Level 4 (1-4) step   272 : dt =    1.250e-03; maxcfl (step) =    0.684; Final time =       0.3400
+[fclaw] Level 4 (1-4) step   273 : dt =    1.250e-03; maxcfl (step) =    0.693; Final time =       0.3412
+[fclaw] Level 4 (1-4) step   274 : dt =    1.250e-03; maxcfl (step) =    0.711; Final time =       0.3425
+[fclaw] Level 4 (1-4) step   275 : dt =    1.250e-03; maxcfl (step) =    0.709; Final time =       0.3437
+[fclaw] Level 4 (1-4) step   276 : dt =    1.250e-03; maxcfl (step) =    0.683; Final time =       0.3450
+[fclaw] Level 4 (1-4) step   277 : dt =    1.250e-03; maxcfl (step) =    0.692; Final time =       0.3462
+[fclaw] Level 4 (1-4) step   278 : dt =    1.250e-03; maxcfl (step) =    0.692; Final time =       0.3475
+[fclaw] Level 4 (1-4) step   279 : dt =    1.250e-03; maxcfl (step) =    0.687; Final time =       0.3487
+[fclaw] Level 4 (1-4) step   280 : dt =    1.250e-03; maxcfl (step) =    0.680; Final time =       0.3500
+[fclaw] Level 4 (1-4) step   281 : dt =    1.250e-03; maxcfl (step) =    0.675; Final time =       0.3512
+[fclaw] Level 4 (1-4) step   282 : dt =    1.250e-03; maxcfl (step) =    0.670; Final time =       0.3525
+[fclaw] Level 4 (1-4) step   283 : dt =    1.250e-03; maxcfl (step) =    0.663; Final time =       0.3537
+[fclaw] Level 4 (1-4) step   284 : dt =    1.250e-03; maxcfl (step) =    0.662; Final time =       0.3550
+[fclaw] Level 4 (1-4) step   285 : dt =    1.250e-03; maxcfl (step) =    0.667; Final time =       0.3562
+[fclaw] Level 4 (1-4) step   286 : dt =    1.250e-03; maxcfl (step) =    0.667; Final time =       0.3575
+[fclaw] Level 4 (1-4) step   287 : dt =    1.250e-03; maxcfl (step) =    0.649; Final time =       0.3587
+[fclaw] Level 4 (1-4) step   288 : dt =    1.250e-03; maxcfl (step) =    0.659; Final time =       0.3600
+[fclaw] Level 4 (1-4) step   289 : dt =    1.250e-03; maxcfl (step) =    0.659; Final time =       0.3612
+[fclaw] Level 4 (1-4) step   290 : dt =    1.250e-03; maxcfl (step) =    0.658; Final time =       0.3625
+[fclaw] Level 4 (1-4) step   291 : dt =    1.250e-03; maxcfl (step) =    0.645; Final time =       0.3637
+[fclaw] Level 4 (1-4) step   292 : dt =    1.250e-03; maxcfl (step) =    0.651; Final time =       0.3650
+[fclaw] Level 4 (1-4) step   293 : dt =    1.250e-03; maxcfl (step) =    0.651; Final time =       0.3662
+[fclaw] Level 4 (1-4) step   294 : dt =    1.250e-03; maxcfl (step) =    0.647; Final time =       0.3675
+[fclaw] Level 4 (1-4) step   295 : dt =    1.250e-03; maxcfl (step) =    0.641; Final time =       0.3687
+[fclaw] Level 4 (1-4) step   296 : dt =    1.250e-03; maxcfl (step) =    0.656; Final time =       0.3700
+[fclaw] Level 4 (1-4) step   297 : dt =    1.250e-03; maxcfl (step) =    0.656; Final time =       0.3712
+[fclaw] Level 4 (1-4) step   298 : dt =    1.250e-03; maxcfl (step) =    0.641; Final time =       0.3725
+[fclaw] Level 4 (1-4) step   299 : dt =    1.250e-03; maxcfl (step) =    0.646; Final time =       0.3737
+[fclaw] Level 4 (1-4) step   300 : dt =    1.250e-03; maxcfl (step) =    0.652; Final time =       0.3750
+[fclaw] Time step   10  at time   3.75000000e-01
+
+[fclaw] Level 4 (1-4) step   301 : dt =    1.250e-03; maxcfl (step) =    0.678; Final time =       0.3762
+[fclaw] Level 4 (1-4) step   302 : dt =    1.250e-03; maxcfl (step) =    0.679; Final time =       0.3775
+[fclaw] Level 4 (1-4) step   303 : dt =    1.250e-03; maxcfl (step) =    0.664; Final time =       0.3787
+[fclaw] Level 4 (1-4) step   304 : dt =    1.250e-03; maxcfl (step) =    0.672; Final time =       0.3800
+[fclaw] Level 4 (1-4) step   305 : dt =    1.250e-03; maxcfl (step) =    0.675; Final time =       0.3812
+[fclaw] Level 4 (1-4) step   306 : dt =    1.250e-03; maxcfl (step) =    0.668; Final time =       0.3825
+[fclaw] Level 4 (1-4) step   307 : dt =    1.250e-03; maxcfl (step) =    0.641; Final time =       0.3837
+[fclaw] Level 4 (1-4) step   308 : dt =    1.250e-03; maxcfl (step) =    0.657; Final time =       0.3850
+[fclaw] Level 4 (1-4) step   309 : dt =    1.250e-03; maxcfl (step) =    0.663; Final time =       0.3862
+[fclaw] Level 4 (1-4) step   310 : dt =    1.250e-03; maxcfl (step) =    0.657; Final time =       0.3875
+[fclaw] Level 4 (1-4) step   311 : dt =    1.250e-03; maxcfl (step) =    0.661; Final time =       0.3887
+[fclaw] Level 4 (1-4) step   312 : dt =    1.250e-03; maxcfl (step) =    0.656; Final time =       0.3900
+[fclaw] Level 4 (1-4) step   313 : dt =    1.250e-03; maxcfl (step) =    0.645; Final time =       0.3912
+[fclaw] Level 4 (1-4) step   314 : dt =    1.250e-03; maxcfl (step) =    0.675; Final time =       0.3925
+[fclaw] Level 4 (1-4) step   315 : dt =    1.250e-03; maxcfl (step) =    0.693; Final time =       0.3937
+[fclaw] Level 4 (1-4) step   316 : dt =    1.250e-03; maxcfl (step) =    0.694; Final time =       0.3950
+[fclaw] Level 4 (1-4) step   317 : dt =    1.250e-03; maxcfl (step) =    0.694; Final time =       0.3962
+[fclaw] Level 4 (1-4) step   318 : dt =    1.250e-03; maxcfl (step) =    0.690; Final time =       0.3975
+[fclaw] Level 4 (1-4) step   319 : dt =    1.250e-03; maxcfl (step) =    0.683; Final time =       0.3987
+[fclaw] Level 4 (1-4) step   320 : dt =    1.250e-03; maxcfl (step) =    0.676; Final time =       0.4000
+[fclaw] Level 4 (1-4) step   321 : dt =    1.250e-03; maxcfl (step) =    0.669; Final time =       0.4012
+[fclaw] Level 4 (1-4) step   322 : dt =    1.250e-03; maxcfl (step) =    0.663; Final time =       0.4025
+[fclaw] Level 4 (1-4) step   323 : dt =    1.250e-03; maxcfl (step) =    0.669; Final time =       0.4037
+[fclaw] Level 4 (1-4) step   324 : dt =    1.250e-03; maxcfl (step) =    0.676; Final time =       0.4050
+[fclaw] Level 4 (1-4) step   325 : dt =    1.250e-03; maxcfl (step) =    0.677; Final time =       0.4062
+[fclaw] Level 4 (1-4) step   326 : dt =    1.250e-03; maxcfl (step) =    0.685; Final time =       0.4075
+[fclaw] Level 4 (1-4) step   327 : dt =    1.250e-03; maxcfl (step) =    0.697; Final time =       0.4087
+[fclaw] Level 4 (1-4) step   328 : dt =    1.250e-03; maxcfl (step) =    0.698; Final time =       0.4100
+[fclaw] Level 4 (1-4) step   329 : dt =    1.250e-03; maxcfl (step) =    0.696; Final time =       0.4112
+[fclaw] Level 4 (1-4) step   330 : dt =    1.250e-03; maxcfl (step) =    0.674; Final time =       0.4125
+[fclaw] Time step   11  at time   4.12500000e-01
+
+[fclaw] Level 4 (1-4) step   331 : dt =    1.250e-03; maxcfl (step) =    0.647; Final time =       0.4137
+[fclaw] Level 4 (2-4) step   332 : dt =    1.250e-03; maxcfl (step) =    0.645; Final time =       0.4150
+[fclaw] Level 4 (2-4) step   333 : dt =    1.250e-03; maxcfl (step) =    0.645; Final time =       0.4162
+[fclaw] Level 4 (2-4) step   334 : dt =    1.250e-03; maxcfl (step) =    0.648; Final time =       0.4175
+[fclaw] Level 4 (2-4) step   335 : dt =    1.250e-03; maxcfl (step) =    0.649; Final time =       0.4187
+[fclaw] Level 4 (2-4) step   336 : dt =    1.250e-03; maxcfl (step) =    0.648; Final time =       0.4200
+[fclaw] Level 4 (2-4) step   337 : dt =    1.250e-03; maxcfl (step) =    0.649; Final time =       0.4212
+[fclaw] Level 4 (2-4) step   338 : dt =    1.250e-03; maxcfl (step) =    0.648; Final time =       0.4225
+[fclaw] Level 4 (2-4) step   339 : dt =    1.250e-03; maxcfl (step) =    0.645; Final time =       0.4237
+[fclaw] Level 4 (2-4) step   340 : dt =    1.250e-03; maxcfl (step) =    0.651; Final time =       0.4250
+[fclaw] Level 4 (2-4) step   341 : dt =    1.250e-03; maxcfl (step) =    0.651; Final time =       0.4262
+[fclaw] Level 4 (2-4) step   342 : dt =    1.250e-03; maxcfl (step) =    0.645; Final time =       0.4275
+[fclaw] Level 4 (2-4) step   343 : dt =    1.250e-03; maxcfl (step) =    0.647; Final time =       0.4287
+[fclaw] Level 4 (2-4) step   344 : dt =    1.250e-03; maxcfl (step) =    0.650; Final time =       0.4300
+[fclaw] Level 4 (2-4) step   345 : dt =    1.250e-03; maxcfl (step) =    0.651; Final time =       0.4312
+[fclaw] Level 4 (2-4) step   346 : dt =    1.250e-03; maxcfl (step) =    0.646; Final time =       0.4325
+[fclaw] Level 4 (2-4) step   347 : dt =    1.250e-03; maxcfl (step) =    0.654; Final time =       0.4337
+[fclaw] Level 4 (2-4) step   348 : dt =    1.250e-03; maxcfl (step) =    0.659; Final time =       0.4350
+[fclaw] Level 4 (2-4) step   349 : dt =    1.250e-03; maxcfl (step) =    0.659; Final time =       0.4362
+[fclaw] Level 4 (2-4) step   350 : dt =    1.250e-03; maxcfl (step) =    0.654; Final time =       0.4375
+[fclaw] Level 4 (2-4) step   351 : dt =    1.250e-03; maxcfl (step) =    0.663; Final time =       0.4387
+[fclaw] Level 4 (2-4) step   352 : dt =    1.250e-03; maxcfl (step) =    0.672; Final time =       0.4400
+[fclaw] Level 4 (2-4) step   353 : dt =    1.250e-03; maxcfl (step) =    0.676; Final time =       0.4412
+[fclaw] Level 4 (2-4) step   354 : dt =    1.250e-03; maxcfl (step) =    0.679; Final time =       0.4425
+[fclaw] Level 4 (2-4) step   355 : dt =    1.250e-03; maxcfl (step) =    0.695; Final time =       0.4437
+[fclaw] Level 4 (2-4) step   356 : dt =    1.250e-03; maxcfl (step) =    0.705; Final time =       0.4450
+[fclaw] Level 4 (2-4) step   357 : dt =    1.250e-03; maxcfl (step) =    0.709; Final time =       0.4462
+[fclaw] Level 4 (2-4) step   358 : dt =    1.250e-03; maxcfl (step) =    0.711; Final time =       0.4475
+[fclaw] Level 4 (2-4) step   359 : dt =    1.250e-03; maxcfl (step) =    0.714; Final time =       0.4487
+[fclaw] Level 4 (2-4) step   360 : dt =    1.250e-03; maxcfl (step) =    0.697; Final time =       0.4500
+[fclaw] Time step   12  at time   4.50000000e-01
+
+[fclaw] Level 4 (2-4) step   361 : dt =    1.250e-03; maxcfl (step) =    0.699; Final time =       0.4512
+[fclaw] Level 4 (2-4) step   362 : dt =    1.250e-03; maxcfl (step) =    0.705; Final time =       0.4525
+[fclaw] Level 4 (2-4) step   363 : dt =    1.250e-03; maxcfl (step) =    0.691; Final time =       0.4537
+[fclaw] Level 4 (2-4) step   364 : dt =    1.250e-03; maxcfl (step) =    0.685; Final time =       0.4550
+[fclaw] Level 4 (2-4) step   365 : dt =    1.250e-03; maxcfl (step) =    0.700; Final time =       0.4562
+[fclaw] Level 4 (2-4) step   366 : dt =    1.250e-03; maxcfl (step) =    0.699; Final time =       0.4575
+[fclaw] Level 4 (2-4) step   367 : dt =    1.250e-03; maxcfl (step) =    0.662; Final time =       0.4587
+[fclaw] Level 4 (2-4) step   368 : dt =    1.250e-03; maxcfl (step) =    0.674; Final time =       0.4600
+[fclaw] Level 4 (2-4) step   369 : dt =    1.250e-03; maxcfl (step) =    0.674; Final time =       0.4612
+[fclaw] Level 4 (2-4) step   370 : dt =    1.250e-03; maxcfl (step) =    0.668; Final time =       0.4625
+[fclaw] Level 4 (2-4) step   371 : dt =    1.250e-03; maxcfl (step) =    0.678; Final time =       0.4637
+[fclaw] Level 4 (2-4) step   372 : dt =    1.250e-03; maxcfl (step) =    0.654; Final time =       0.4650
+[fclaw] Level 4 (2-4) step   373 : dt =    1.250e-03; maxcfl (step) =    0.647; Final time =       0.4662
+[fclaw] Level 4 (2-4) step   374 : dt =    1.250e-03; maxcfl (step) =    0.653; Final time =       0.4675
+[fclaw] Level 4 (2-4) step   375 : dt =    1.250e-03; maxcfl (step) =    0.646; Final time =       0.4687
+[fclaw] Level 4 (2-4) step   376 : dt =    1.250e-03; maxcfl (step) =    0.648; Final time =       0.4700
+[fclaw] Level 4 (2-4) step   377 : dt =    1.250e-03; maxcfl (step) =    0.640; Final time =       0.4712
+[fclaw] Level 4 (2-4) step   378 : dt =    1.250e-03; maxcfl (step) =    0.641; Final time =       0.4725
+[fclaw] Level 4 (2-4) step   379 : dt =    1.250e-03; maxcfl (step) =    0.640; Final time =       0.4737
+[fclaw] Level 4 (2-4) step   380 : dt =    1.250e-03; maxcfl (step) =    0.628; Final time =       0.4750
+[fclaw] Level 4 (2-4) step   381 : dt =    1.250e-03; maxcfl (step) =    0.629; Final time =       0.4762
+[fclaw] Level 4 (2-4) step   382 : dt =    1.250e-03; maxcfl (step) =    0.630; Final time =       0.4775
+[fclaw] Level 4 (2-4) step   383 : dt =    1.250e-03; maxcfl (step) =    0.631; Final time =       0.4787
+[fclaw] Level 4 (2-4) step   384 : dt =    1.250e-03; maxcfl (step) =    0.631; Final time =       0.4800
+[fclaw] Level 4 (2-4) step   385 : dt =    1.250e-03; maxcfl (step) =    0.623; Final time =       0.4812
+[fclaw] Level 4 (2-4) step   386 : dt =    1.250e-03; maxcfl (step) =    0.624; Final time =       0.4825
+[fclaw] Level 4 (2-4) step   387 : dt =    1.250e-03; maxcfl (step) =    0.628; Final time =       0.4837
+[fclaw] Level 4 (2-4) step   388 : dt =    1.250e-03; maxcfl (step) =    0.635; Final time =       0.4850
+[fclaw] Level 4 (2-4) step   389 : dt =    1.250e-03; maxcfl (step) =    0.636; Final time =       0.4862
+[fclaw] Level 4 (2-4) step   390 : dt =    1.250e-03; maxcfl (step) =    0.645; Final time =       0.4875
+[fclaw] Time step   13  at time   4.87500000e-01
+
+[fclaw] Level 4 (2-4) step   391 : dt =    1.250e-03; maxcfl (step) =    0.658; Final time =       0.4887
+[fclaw] Level 4 (2-4) step   392 : dt =    1.250e-03; maxcfl (step) =    0.659; Final time =       0.4900
+[fclaw] Level 4 (2-4) step   393 : dt =    1.250e-03; maxcfl (step) =    0.658; Final time =       0.4912
+[fclaw] Level 4 (2-4) step   394 : dt =    1.250e-03; maxcfl (step) =    0.665; Final time =       0.4925
+[fclaw] Level 4 (2-4) step   395 : dt =    1.250e-03; maxcfl (step) =    0.665; Final time =       0.4937
+[fclaw] Level 4 (2-4) step   396 : dt =    1.250e-03; maxcfl (step) =    0.664; Final time =       0.4950
+[fclaw] Level 4 (2-4) step   397 : dt =    1.250e-03; maxcfl (step) =    0.658; Final time =       0.4962
+[fclaw] Level 4 (2-4) step   398 : dt =    1.250e-03; maxcfl (step) =    0.654; Final time =       0.4975
+[fclaw] Level 4 (2-4) step   399 : dt =    1.250e-03; maxcfl (step) =    0.654; Final time =       0.4987
+[fclaw] Level 4 (2-4) step   400 : dt =    1.250e-03; maxcfl (step) =    0.655; Final time =       0.5000
+[fclaw] Level 4 (2-4) step   401 : dt =    1.250e-03; maxcfl (step) =    0.659; Final time =       0.5012
+[fclaw] Level 4 (2-4) step   402 : dt =    1.250e-03; maxcfl (step) =    0.669; Final time =       0.5025
+[fclaw] Level 4 (2-4) step   403 : dt =    1.250e-03; maxcfl (step) =    0.669; Final time =       0.5037
+[fclaw] Level 4 (2-4) step   404 : dt =    1.250e-03; maxcfl (step) =    0.664; Final time =       0.5050
+[fclaw] Level 4 (2-4) step   405 : dt =    1.250e-03; maxcfl (step) =    0.657; Final time =       0.5062
+[fclaw] Level 4 (2-4) step   406 : dt =    1.250e-03; maxcfl (step) =    0.658; Final time =       0.5075
+[fclaw] Level 4 (2-4) step   407 : dt =    1.250e-03; maxcfl (step) =    0.653; Final time =       0.5087
+[fclaw] Level 4 (2-4) step   408 : dt =    1.250e-03; maxcfl (step) =    0.655; Final time =       0.5100
+[fclaw] Level 4 (2-4) step   409 : dt =    1.250e-03; maxcfl (step) =    0.655; Final time =       0.5112
+[fclaw] Level 4 (2-4) step   410 : dt =    1.250e-03; maxcfl (step) =    0.654; Final time =       0.5125
+[fclaw] Level 4 (2-4) step   411 : dt =    1.250e-03; maxcfl (step) =    0.661; Final time =       0.5137
+[fclaw] Level 4 (2-4) step   412 : dt =    1.250e-03; maxcfl (step) =    0.663; Final time =       0.5150
+[fclaw] Level 4 (2-4) step   413 : dt =    1.250e-03; maxcfl (step) =    0.663; Final time =       0.5162
+[fclaw] Level 4 (2-4) step   414 : dt =    1.250e-03; maxcfl (step) =    0.660; Final time =       0.5175
+[fclaw] Level 4 (2-4) step   415 : dt =    1.250e-03; maxcfl (step) =    0.660; Final time =       0.5187
+[fclaw] Level 4 (2-4) step   416 : dt =    1.250e-03; maxcfl (step) =    0.658; Final time =       0.5200
+[fclaw] Level 4 (2-4) step   417 : dt =    1.250e-03; maxcfl (step) =    0.657; Final time =       0.5212
+[fclaw] Level 4 (2-4) step   418 : dt =    1.250e-03; maxcfl (step) =    0.653; Final time =       0.5225
+[fclaw] Level 4 (2-4) step   419 : dt =    1.250e-03; maxcfl (step) =    0.644; Final time =       0.5237
+[fclaw] Level 4 (2-4) step   420 : dt =    1.250e-03; maxcfl (step) =    0.646; Final time =       0.5250
+[fclaw] Time step   14  at time   5.25000000e-01
+
+[fclaw] Level 4 (2-4) step   421 : dt =    1.250e-03; maxcfl (step) =    0.644; Final time =       0.5262
+[fclaw] Level 4 (2-4) step   422 : dt =    1.250e-03; maxcfl (step) =    0.649; Final time =       0.5275
+[fclaw] Level 4 (2-4) step   423 : dt =    1.250e-03; maxcfl (step) =    0.661; Final time =       0.5287
+[fclaw] Level 4 (2-4) step   424 : dt =    1.250e-03; maxcfl (step) =    0.648; Final time =       0.5300
+[fclaw] Level 4 (2-4) step   425 : dt =    1.250e-03; maxcfl (step) =    0.637; Final time =       0.5312
+[fclaw] Level 4 (2-4) step   426 : dt =    1.250e-03; maxcfl (step) =    0.633; Final time =       0.5325
+[fclaw] Level 4 (2-4) step   427 : dt =    1.250e-03; maxcfl (step) =    0.647; Final time =       0.5337
+[fclaw] Level 4 (2-4) step   428 : dt =    1.250e-03; maxcfl (step) =    0.663; Final time =       0.5350
+[fclaw] Level 4 (2-4) step   429 : dt =    1.250e-03; maxcfl (step) =    0.661; Final time =       0.5362
+[fclaw] Level 4 (2-4) step   430 : dt =    1.250e-03; maxcfl (step) =    0.656; Final time =       0.5375
+[fclaw] Level 4 (2-4) step   431 : dt =    1.250e-03; maxcfl (step) =    0.648; Final time =       0.5387
+[fclaw] Level 4 (2-4) step   432 : dt =    1.250e-03; maxcfl (step) =    0.638; Final time =       0.5400
+[fclaw] Level 4 (2-4) step   433 : dt =    1.250e-03; maxcfl (step) =    0.643; Final time =       0.5412
+[fclaw] Level 4 (2-4) step   434 : dt =    1.250e-03; maxcfl (step) =    0.654; Final time =       0.5425
+[fclaw] Level 4 (2-4) step   435 : dt =    1.250e-03; maxcfl (step) =    0.654; Final time =       0.5437
+[fclaw] Level 4 (2-4) step   436 : dt =    1.250e-03; maxcfl (step) =    0.643; Final time =       0.5450
+[fclaw] Level 4 (2-4) step   437 : dt =    1.250e-03; maxcfl (step) =    0.647; Final time =       0.5462
+[fclaw] Level 4 (2-4) step   438 : dt =    1.250e-03; maxcfl (step) =    0.650; Final time =       0.5475
+[fclaw] Level 4 (2-4) step   439 : dt =    1.250e-03; maxcfl (step) =    0.653; Final time =       0.5487
+[fclaw] Level 4 (2-4) step   440 : dt =    1.250e-03; maxcfl (step) =    0.653; Final time =       0.5500
+[fclaw] Level 4 (2-4) step   441 : dt =    1.250e-03; maxcfl (step) =    0.653; Final time =       0.5512
+[fclaw] Level 4 (2-4) step   442 : dt =    1.250e-03; maxcfl (step) =    0.655; Final time =       0.5525
+[fclaw] Level 4 (2-4) step   443 : dt =    1.250e-03; maxcfl (step) =    0.655; Final time =       0.5537
+[fclaw] Level 4 (2-4) step   444 : dt =    1.250e-03; maxcfl (step) =    0.654; Final time =       0.5550
+[fclaw] Level 4 (2-4) step   445 : dt =    1.250e-03; maxcfl (step) =    0.652; Final time =       0.5562
+[fclaw] Level 4 (2-4) step   446 : dt =    1.250e-03; maxcfl (step) =    0.654; Final time =       0.5575
+[fclaw] Level 4 (2-4) step   447 : dt =    1.250e-03; maxcfl (step) =    0.658; Final time =       0.5587
+[fclaw] Level 4 (2-4) step   448 : dt =    1.250e-03; maxcfl (step) =    0.660; Final time =       0.5600
+[fclaw] Level 4 (2-4) step   449 : dt =    1.250e-03; maxcfl (step) =    0.661; Final time =       0.5612
+[fclaw] Level 4 (2-4) step   450 : dt =    1.250e-03; maxcfl (step) =    0.671; Final time =       0.5625
+[fclaw] Time step   15  at time   5.62500000e-01
+
+[fclaw] Level 4 (2-4) step   451 : dt =    1.250e-03; maxcfl (step) =    0.676; Final time =       0.5637
+[fclaw] Level 4 (2-4) step   452 : dt =    1.250e-03; maxcfl (step) =    0.677; Final time =       0.5650
+[fclaw] Level 4 (2-4) step   453 : dt =    1.250e-03; maxcfl (step) =    0.679; Final time =       0.5662
+[fclaw] Level 4 (2-4) step   454 : dt =    1.250e-03; maxcfl (step) =    0.686; Final time =       0.5675
+[fclaw] Level 4 (2-4) step   455 : dt =    1.250e-03; maxcfl (step) =    0.690; Final time =       0.5687
+[fclaw] Level 4 (2-4) step   456 : dt =    1.250e-03; maxcfl (step) =    0.692; Final time =       0.5700
+[fclaw] Level 4 (2-4) step   457 : dt =    1.250e-03; maxcfl (step) =    0.695; Final time =       0.5712
+[fclaw] Level 4 (2-4) step   458 : dt =    1.250e-03; maxcfl (step) =    0.700; Final time =       0.5725
+[fclaw] Level 4 (2-4) step   459 : dt =    1.250e-03; maxcfl (step) =    0.700; Final time =       0.5737
+[fclaw] Level 4 (2-4) step   460 : dt =    1.250e-03; maxcfl (step) =    0.699; Final time =       0.5750
+[fclaw] Level 4 (2-4) step   461 : dt =    1.250e-03; maxcfl (step) =    0.695; Final time =       0.5762
+[fclaw] Level 4 (2-4) step   462 : dt =    1.250e-03; maxcfl (step) =    0.692; Final time =       0.5775
+[fclaw] Level 4 (2-4) step   463 : dt =    1.250e-03; maxcfl (step) =    0.695; Final time =       0.5787
+[fclaw] Level 4 (2-4) step   464 : dt =    1.250e-03; maxcfl (step) =    0.699; Final time =       0.5800
+[fclaw] Level 4 (2-4) step   465 : dt =    1.250e-03; maxcfl (step) =    0.711; Final time =       0.5812
+[fclaw] Level 4 (2-4) step   466 : dt =    1.250e-03; maxcfl (step) =    0.715; Final time =       0.5825
+[fclaw] Level 4 (2-4) step   467 : dt =    1.250e-03; maxcfl (step) =    0.716; Final time =       0.5837
+[fclaw] Level 4 (2-4) step   468 : dt =    1.250e-03; maxcfl (step) =    0.715; Final time =       0.5850
+[fclaw] Level 4 (2-4) step   469 : dt =    1.250e-03; maxcfl (step) =    0.716; Final time =       0.5862
+[fclaw] Level 4 (2-4) step   470 : dt =    1.250e-03; maxcfl (step) =    0.719; Final time =       0.5875
+[fclaw] Level 4 (2-4) step   471 : dt =    1.250e-03; maxcfl (step) =    0.719; Final time =       0.5887
+[fclaw] Level 4 (2-4) step   472 : dt =    1.250e-03; maxcfl (step) =    0.719; Final time =       0.5900
+[fclaw] Level 4 (2-4) step   473 : dt =    1.250e-03; maxcfl (step) =    0.721; Final time =       0.5912
+[fclaw] Level 4 (2-4) step   474 : dt =    1.250e-03; maxcfl (step) =    0.732; Final time =       0.5925
+[fclaw] Level 4 (2-4) step   475 : dt =    1.250e-03; maxcfl (step) =    0.739; Final time =       0.5937
+[fclaw] Level 4 (2-4) step   476 : dt =    1.250e-03; maxcfl (step) =    0.736; Final time =       0.5950
+[fclaw] Level 4 (2-4) step   477 : dt =    1.250e-03; maxcfl (step) =    0.729; Final time =       0.5962
+[fclaw] Level 4 (2-4) step   478 : dt =    1.250e-03; maxcfl (step) =    0.717; Final time =       0.5975
+[fclaw] Level 4 (2-4) step   479 : dt =    1.250e-03; maxcfl (step) =    0.716; Final time =       0.5987
+[fclaw] Level 4 (2-4) step   480 : dt =    1.250e-03; maxcfl (step) =    0.713; Final time =       0.6000
+[fclaw] Time step   16  at time   6.00000000e-01
+
+[fclaw] Level 4 (2-4) step   481 : dt =    1.250e-03; maxcfl (step) =    0.717; Final time =       0.6012
+[fclaw] Level 4 (2-4) step   482 : dt =    1.250e-03; maxcfl (step) =    0.729; Final time =       0.6025
+[fclaw] Level 4 (2-4) step   483 : dt =    1.250e-03; maxcfl (step) =    0.736; Final time =       0.6037
+[fclaw] Level 4 (2-4) step   484 : dt =    1.250e-03; maxcfl (step) =    0.736; Final time =       0.6050
+[fclaw] Level 4 (2-4) step   485 : dt =    1.250e-03; maxcfl (step) =    0.731; Final time =       0.6062
+[fclaw] Level 4 (2-4) step   486 : dt =    1.250e-03; maxcfl (step) =    0.716; Final time =       0.6075
+[fclaw] Level 4 (2-4) step   487 : dt =    1.250e-03; maxcfl (step) =    0.715; Final time =       0.6087
+[fclaw] Level 4 (2-4) step   488 : dt =    1.250e-03; maxcfl (step) =    0.715; Final time =       0.6100
+[fclaw] Level 4 (2-4) step   489 : dt =    1.250e-03; maxcfl (step) =    0.713; Final time =       0.6112
+[fclaw] Level 4 (2-4) step   490 : dt =    1.250e-03; maxcfl (step) =    0.704; Final time =       0.6125
+[fclaw] Level 4 (2-4) step   491 : dt =    1.250e-03; maxcfl (step) =    0.706; Final time =       0.6137
+[fclaw] Level 4 (2-4) step   492 : dt =    1.250e-03; maxcfl (step) =    0.707; Final time =       0.6150
+[fclaw] Level 4 (2-4) step   493 : dt =    1.250e-03; maxcfl (step) =    0.707; Final time =       0.6162
+[fclaw] Level 4 (2-4) step   494 : dt =    1.250e-03; maxcfl (step) =    0.714; Final time =       0.6175
+[fclaw] Level 4 (2-4) step   495 : dt =    1.250e-03; maxcfl (step) =    0.714; Final time =       0.6187
+[fclaw] Level 4 (2-4) step   496 : dt =    1.250e-03; maxcfl (step) =    0.698; Final time =       0.6200
+[fclaw] Level 4 (2-4) step   497 : dt =    1.250e-03; maxcfl (step) =    0.693; Final time =       0.6212
+[fclaw] Level 4 (2-4) step   498 : dt =    1.250e-03; maxcfl (step) =    0.687; Final time =       0.6225
+[fclaw] Level 4 (2-4) step   499 : dt =    1.250e-03; maxcfl (step) =    0.684; Final time =       0.6237
+[fclaw] Level 4 (2-4) step   500 : dt =    1.250e-03; maxcfl (step) =    0.685; Final time =       0.6250
+[fclaw] Level 4 (2-4) step   501 : dt =    1.250e-03; maxcfl (step) =    0.684; Final time =       0.6262
+[fclaw] Level 4 (2-4) step   502 : dt =    1.250e-03; maxcfl (step) =    0.692; Final time =       0.6275
+[fclaw] Level 4 (2-4) step   503 : dt =    1.250e-03; maxcfl (step) =    0.692; Final time =       0.6287
+[fclaw] Level 4 (2-4) step   504 : dt =    1.250e-03; maxcfl (step) =    0.690; Final time =       0.6300
+[fclaw] Level 4 (2-4) step   505 : dt =    1.250e-03; maxcfl (step) =    0.698; Final time =       0.6312
+[fclaw] Level 4 (2-4) step   506 : dt =    1.250e-03; maxcfl (step) =    0.683; Final time =       0.6325
+[fclaw] Level 4 (2-4) step   507 : dt =    1.250e-03; maxcfl (step) =    0.667; Final time =       0.6337
+[fclaw] Level 4 (2-4) step   508 : dt =    1.250e-03; maxcfl (step) =    0.675; Final time =       0.6350
+[fclaw] Level 4 (2-4) step   509 : dt =    1.250e-03; maxcfl (step) =    0.678; Final time =       0.6362
+[fclaw] Level 4 (2-4) step   510 : dt =    1.250e-03; maxcfl (step) =    0.680; Final time =       0.6375
+[fclaw] Time step   17  at time   6.37500000e-01
+
+[fclaw] Level 4 (2-4) step   511 : dt =    1.250e-03; maxcfl (step) =    0.681; Final time =       0.6387
+[fclaw] Level 4 (2-4) step   512 : dt =    1.250e-03; maxcfl (step) =    0.685; Final time =       0.6400
+[fclaw] Level 4 (2-4) step   513 : dt =    1.250e-03; maxcfl (step) =    0.685; Final time =       0.6412
+[fclaw] Level 4 (2-4) step   514 : dt =    1.250e-03; maxcfl (step) =    0.682; Final time =       0.6425
+[fclaw] Level 4 (2-4) step   515 : dt =    1.250e-03; maxcfl (step) =    0.676; Final time =       0.6437
+[fclaw] Level 4 (2-4) step   516 : dt =    1.250e-03; maxcfl (step) =    0.668; Final time =       0.6450
+[fclaw] Level 4 (2-4) step   517 : dt =    1.250e-03; maxcfl (step) =    0.668; Final time =       0.6462
+[fclaw] Level 4 (2-4) step   518 : dt =    1.250e-03; maxcfl (step) =    0.672; Final time =       0.6475
+[fclaw] Level 4 (2-4) step   519 : dt =    1.250e-03; maxcfl (step) =    0.673; Final time =       0.6487
+[fclaw] Level 4 (2-4) step   520 : dt =    1.250e-03; maxcfl (step) =    0.672; Final time =       0.6500
+[fclaw] Level 4 (2-4) step   521 : dt =    1.250e-03; maxcfl (step) =    0.673; Final time =       0.6512
+[fclaw] Level 4 (2-4) step   522 : dt =    1.250e-03; maxcfl (step) =    0.676; Final time =       0.6525
+[fclaw] Level 4 (2-4) step   523 : dt =    1.250e-03; maxcfl (step) =    0.677; Final time =       0.6537
+[fclaw] Level 4 (2-4) step   524 : dt =    1.250e-03; maxcfl (step) =    0.676; Final time =       0.6550
+[fclaw] Level 4 (2-4) step   525 : dt =    1.250e-03; maxcfl (step) =    0.672; Final time =       0.6562
+[fclaw] Level 4 (2-4) step   526 : dt =    1.250e-03; maxcfl (step) =    0.665; Final time =       0.6575
+[fclaw] Level 4 (2-4) step   527 : dt =    1.250e-03; maxcfl (step) =    0.661; Final time =       0.6587
+[fclaw] Level 4 (2-4) step   528 : dt =    1.250e-03; maxcfl (step) =    0.662; Final time =       0.6600
+[fclaw] Level 4 (2-4) step   529 : dt =    1.250e-03; maxcfl (step) =    0.662; Final time =       0.6612
+[fclaw] Level 4 (2-4) step   530 : dt =    1.250e-03; maxcfl (step) =    0.662; Final time =       0.6625
+[fclaw] Level 4 (2-4) step   531 : dt =    1.250e-03; maxcfl (step) =    0.662; Final time =       0.6637
+[fclaw] Level 4 (2-4) step   532 : dt =    1.250e-03; maxcfl (step) =    0.661; Final time =       0.6650
+[fclaw] Level 4 (2-4) step   533 : dt =    1.250e-03; maxcfl (step) =    0.659; Final time =       0.6662
+[fclaw] Level 4 (2-4) step   534 : dt =    1.250e-03; maxcfl (step) =    0.657; Final time =       0.6675
+[fclaw] Level 4 (2-4) step   535 : dt =    1.250e-03; maxcfl (step) =    0.653; Final time =       0.6687
+[fclaw] Level 4 (2-4) step   536 : dt =    1.250e-03; maxcfl (step) =    0.647; Final time =       0.6700
+[fclaw] Level 4 (2-4) step   537 : dt =    1.250e-03; maxcfl (step) =    0.641; Final time =       0.6712
+[fclaw] Level 4 (2-4) step   538 : dt =    1.250e-03; maxcfl (step) =    0.643; Final time =       0.6725
+[fclaw] Level 4 (2-4) step   539 : dt =    1.250e-03; maxcfl (step) =    0.643; Final time =       0.6737
+[fclaw] Level 4 (2-4) step   540 : dt =    1.250e-03; maxcfl (step) =    0.649; Final time =       0.6750
+[fclaw] Time step   18  at time   6.75000000e-01
+
+[fclaw] Level 4 (2-4) step   541 : dt =    1.250e-03; maxcfl (step) =    0.644; Final time =       0.6762
+[fclaw] Level 4 (2-4) step   542 : dt =    1.250e-03; maxcfl (step) =    0.642; Final time =       0.6775
+[fclaw] Level 4 (2-4) step   543 : dt =    1.250e-03; maxcfl (step) =    0.639; Final time =       0.6787
+[fclaw] Level 4 (2-4) step   544 : dt =    1.250e-03; maxcfl (step) =    0.631; Final time =       0.6800
+[fclaw] Level 4 (2-4) step   545 : dt =    1.250e-03; maxcfl (step) =    0.640; Final time =       0.6812
+[fclaw] Level 4 (2-4) step   546 : dt =    1.250e-03; maxcfl (step) =    0.640; Final time =       0.6825
+[fclaw] Level 4 (2-4) step   547 : dt =    1.250e-03; maxcfl (step) =    0.633; Final time =       0.6837
+[fclaw] Level 4 (2-4) step   548 : dt =    1.250e-03; maxcfl (step) =    0.634; Final time =       0.6850
+[fclaw] Level 4 (2-4) step   549 : dt =    1.250e-03; maxcfl (step) =    0.622; Final time =       0.6862
+[fclaw] Level 4 (2-4) step   550 : dt =    1.250e-03; maxcfl (step) =    0.626; Final time =       0.6875
+[fclaw] Level 4 (2-4) step   551 : dt =    1.250e-03; maxcfl (step) =    0.626; Final time =       0.6887
+[fclaw] Level 4 (2-4) step   552 : dt =    1.250e-03; maxcfl (step) =    0.626; Final time =       0.6900
+[fclaw] Level 4 (2-4) step   553 : dt =    1.250e-03; maxcfl (step) =    0.625; Final time =       0.6912
+[fclaw] Level 4 (2-4) step   554 : dt =    1.250e-03; maxcfl (step) =    0.622; Final time =       0.6925
+[fclaw] Level 4 (2-4) step   555 : dt =    1.250e-03; maxcfl (step) =    0.620; Final time =       0.6937
+[fclaw] Level 4 (2-4) step   556 : dt =    1.250e-03; maxcfl (step) =    0.623; Final time =       0.6950
+[fclaw] Level 4 (2-4) step   557 : dt =    1.250e-03; maxcfl (step) =    0.624; Final time =       0.6962
+[fclaw] Level 4 (2-4) step   558 : dt =    1.250e-03; maxcfl (step) =    0.624; Final time =       0.6975
+[fclaw] Level 4 (2-4) step   559 : dt =    1.250e-03; maxcfl (step) =    0.623; Final time =       0.6987
+[fclaw] Level 4 (2-4) step   560 : dt =    1.250e-03; maxcfl (step) =    0.619; Final time =       0.7000
+[fclaw] Level 4 (2-4) step   561 : dt =    1.250e-03; maxcfl (step) =    0.614; Final time =       0.7012
+[fclaw] Level 4 (2-4) step   562 : dt =    1.250e-03; maxcfl (step) =    0.616; Final time =       0.7025
+[fclaw] Level 4 (2-4) step   563 : dt =    1.250e-03; maxcfl (step) =    0.624; Final time =       0.7037
+[fclaw] Level 4 (2-4) step   564 : dt =    1.250e-03; maxcfl (step) =    0.631; Final time =       0.7050
+[fclaw] Level 4 (2-4) step   565 : dt =    1.250e-03; maxcfl (step) =    0.635; Final time =       0.7062
+[fclaw] Level 4 (2-4) step   566 : dt =    1.250e-03; maxcfl (step) =    0.636; Final time =       0.7075
+[fclaw] Level 4 (2-4) step   567 : dt =    1.250e-03; maxcfl (step) =    0.640; Final time =       0.7087
+[fclaw] Level 4 (2-4) step   568 : dt =    1.250e-03; maxcfl (step) =    0.644; Final time =       0.7100
+[fclaw] Level 4 (2-4) step   569 : dt =    1.250e-03; maxcfl (step) =    0.644; Final time =       0.7112
+[fclaw] Level 4 (2-4) step   570 : dt =    1.250e-03; maxcfl (step) =    0.644; Final time =       0.7125
+[fclaw] Time step   19  at time   7.12500000e-01
+
+[fclaw] Level 4 (2-4) step   571 : dt =    1.250e-03; maxcfl (step) =    0.644; Final time =       0.7137
+[fclaw] Level 4 (2-4) step   572 : dt =    1.250e-03; maxcfl (step) =    0.649; Final time =       0.7150
+[fclaw] Level 4 (2-4) step   573 : dt =    1.250e-03; maxcfl (step) =    0.649; Final time =       0.7162
+[fclaw] Level 4 (2-4) step   574 : dt =    1.250e-03; maxcfl (step) =    0.648; Final time =       0.7175
+[fclaw] Level 4 (2-4) step   575 : dt =    1.250e-03; maxcfl (step) =    0.645; Final time =       0.7187
+[fclaw] Level 4 (2-4) step   576 : dt =    1.250e-03; maxcfl (step) =    0.642; Final time =       0.7200
+[fclaw] Level 4 (2-4) step   577 : dt =    1.250e-03; maxcfl (step) =    0.646; Final time =       0.7212
+[fclaw] Level 4 (2-4) step   578 : dt =    1.250e-03; maxcfl (step) =    0.646; Final time =       0.7225
+[fclaw] Level 4 (2-4) step   579 : dt =    1.250e-03; maxcfl (step) =    0.643; Final time =       0.7237
+[fclaw] Level 4 (2-4) step   580 : dt =    1.250e-03; maxcfl (step) =    0.639; Final time =       0.7250
+[fclaw] Level 4 (2-4) step   581 : dt =    1.250e-03; maxcfl (step) =    0.640; Final time =       0.7262
+[fclaw] Level 4 (2-4) step   582 : dt =    1.250e-03; maxcfl (step) =    0.641; Final time =       0.7275
+[fclaw] Level 4 (2-4) step   583 : dt =    1.250e-03; maxcfl (step) =    0.646; Final time =       0.7287
+[fclaw] Level 4 (2-4) step   584 : dt =    1.250e-03; maxcfl (step) =    0.647; Final time =       0.7300
+[fclaw] Level 4 (2-4) step   585 : dt =    1.250e-03; maxcfl (step) =    0.647; Final time =       0.7312
+[fclaw] Level 4 (2-4) step   586 : dt =    1.250e-03; maxcfl (step) =    0.644; Final time =       0.7325
+[fclaw] Level 4 (2-4) step   587 : dt =    1.250e-03; maxcfl (step) =    0.648; Final time =       0.7337
+[fclaw] Level 4 (2-4) step   588 : dt =    1.250e-03; maxcfl (step) =    0.650; Final time =       0.7350
+[fclaw] Level 4 (2-4) step   589 : dt =    1.250e-03; maxcfl (step) =    0.650; Final time =       0.7362
+[fclaw] Level 4 (2-4) step   590 : dt =    1.250e-03; maxcfl (step) =    0.648; Final time =       0.7375
+[fclaw] Level 4 (2-4) step   591 : dt =    1.250e-03; maxcfl (step) =    0.644; Final time =       0.7387
+[fclaw] Level 4 (2-4) step   592 : dt =    1.250e-03; maxcfl (step) =    0.646; Final time =       0.7400
+[fclaw] Level 4 (2-4) step   593 : dt =    1.250e-03; maxcfl (step) =    0.646; Final time =       0.7412
+[fclaw] Level 4 (2-4) step   594 : dt =    1.250e-03; maxcfl (step) =    0.647; Final time =       0.7425
+[fclaw] Level 4 (2-4) step   595 : dt =    1.250e-03; maxcfl (step) =    0.650; Final time =       0.7437
+[fclaw] Level 4 (2-4) step   596 : dt =    1.250e-03; maxcfl (step) =    0.650; Final time =       0.7450
+[fclaw] Level 4 (2-4) step   597 : dt =    1.250e-03; maxcfl (step) =    0.650; Final time =       0.7462
+[fclaw] Level 4 (2-4) step   598 : dt =    1.250e-03; maxcfl (step) =    0.651; Final time =       0.7475
+[fclaw] Level 4 (2-4) step   599 : dt =    1.250e-03; maxcfl (step) =    0.651; Final time =       0.7487
+[fclaw] Level 4 (2-4) step   600 : dt =    1.250e-03; maxcfl (step) =    0.647; Final time =       0.7500
+[fclaw] Time step   20  at time   7.50000000e-01
+
+[fclaw] Finalizing run
+[libsc] Statistics for INIT
+[libsc]    Global number of values:     1
+[libsc]    Mean value (std. dev.):         0.0870063 (0 = 0%)
+[libsc]    Minimum attained at rank     0: 0.0870063
+[libsc]    Maximum attained at rank     0: 0.0870063
+[libsc] Statistics for ADVANCE
+[libsc]    Global number of values:     1
+[libsc]    Mean value (std. dev.):         342.976 (0 = 0%)
+[libsc]    Minimum attained at rank     0: 342.976
+[libsc]    Maximum attained at rank     0: 342.976
+[libsc] Statistics for GHOSTFILL
+[libsc]    Global number of values:     1
+[libsc]    Mean value (std. dev.):         112.419 (0 = 0%)
+[libsc]    Minimum attained at rank     0: 112.419
+[libsc]    Maximum attained at rank     0: 112.419
+[libsc] Statistics for REGRID
+[libsc]    Global number of values:     1
+[libsc]    Mean value (std. dev.):         2.30003 (0 = 0%)
+[libsc]    Minimum attained at rank     0: 2.30003
+[libsc]    Maximum attained at rank     0: 2.30003
+[libsc] Statistics for DIAGNOSTICS
+[libsc]    Global number of values:     1
+[libsc]    Mean value (std. dev.):         1.15578e-05 (0 = 0%)
+[libsc]    Minimum attained at rank     0: 1.15578e-05
+[libsc]    Maximum attained at rank     0: 1.15578e-05
+[libsc] Statistics for OUTPUT
+[libsc]    Global number of values:     1
+[libsc]    Mean value (std. dev.):         0 (0)
+[libsc]    Minimum attained at rank     0: 0
+[libsc]    Maximum attained at rank     0: 0
+[libsc] Statistics for GHOSTPATCH_COMM
+[libsc]    Global number of values:     1
+[libsc]    Mean value (std. dev.):         0.04646 (0 = 0%)
+[libsc]    Minimum attained at rank     0: 0.04646
+[libsc]    Maximum attained at rank     0: 0.04646
+[libsc] Statistics for ADAPT_COMM
+[libsc]    Global number of values:     1
+[libsc]    Mean value (std. dev.):         1.10297 (0 = 0%)
+[libsc]    Minimum attained at rank     0: 1.10297
+[libsc]    Maximum attained at rank     0: 1.10297
+[libsc] Statistics for PARTITION_COMM
+[libsc]    Global number of values:     1
+[libsc]    Mean value (std. dev.):         0.00761694 (0 = 0%)
+[libsc]    Minimum attained at rank     0: 0.00761694
+[libsc]    Maximum attained at rank     0: 0.00761694
+[libsc] Statistics for DIAGNOSTICS_COMM
+[libsc]    Global number of values:     1
+[libsc]    Mean value (std. dev.):         3.75602e-06 (0 = 0%)
+[libsc]    Minimum attained at rank     0: 3.75602e-06
+[libsc]    Maximum attained at rank     0: 3.75602e-06
+[libsc] Statistics for CFL_COMM
+[libsc]    Global number of values:     1
+[libsc]    Mean value (std. dev.):         0.00132081 (0 = 0%)
+[libsc]    Minimum attained at rank     0: 0.00132081
+[libsc]    Maximum attained at rank     0: 0.00132081
+[libsc] Statistics for WALLTIME
+[libsc]    Global number of values:     1
+[libsc]    Mean value (std. dev.):         458.977 (0 = 0%)
+[libsc]    Minimum attained at rank     0: 458.977
+[libsc]    Maximum attained at rank     0: 458.977
+[libsc] Statistics for UNACCOUNTED
+[libsc]    Global number of values:     1
+[libsc]    Mean value (std. dev.):         0.0366384 (0 = 0%)
+[libsc]    Minimum attained at rank     0: 0.0366384
+[libsc]    Maximum attained at rank     0: 0.0366384
+[libsc] Statistics for ADVANCE_STEPS_COUNTER
+[libsc]    Global number of values:     1
+[libsc]    Mean value (std. dev.):         3.16251e+06 (0 = 0%)
+[libsc]    Minimum attained at rank     0: 3.16251e+06
+[libsc]    Maximum attained at rank     0: 3.16251e+06
+[libsc] Statistics for GRIDS_PER_PROC
+[libsc]    Global number of values:     1
+[libsc]    Mean value (std. dev.):         382 (0 = 0%)
+[libsc]    Minimum attained at rank     0: 382
+[libsc]    Maximum attained at rank     0: 382
+[libsc] Statistics for GRIDS_INTERIOR
+[libsc]    Global number of values:     1
+[libsc]    Mean value (std. dev.):         382 (0 = 0%)
+[libsc]    Minimum attained at rank     0: 382
+[libsc]    Maximum attained at rank     0: 382
+[libsc] Statistics for GRIDS_LOCAL_BOUNDARY
+[libsc]    Global number of values:     1
+[libsc]    Mean value (std. dev.):         0 (0)
+[libsc]    Minimum attained at rank     0: 0
+[libsc]    Maximum attained at rank     0: 0
+[libsc] Statistics for GRIDS_REMOTE_BOUNDARY
+[libsc]    Global number of values:     1
+[libsc]    Mean value (std. dev.):         0 (0)
+[libsc]    Minimum attained at rank     0: 0
+[libsc]    Maximum attained at rank     0: 0
+[libsc] Statistics for REGRID_BUILD
+[libsc]    Global number of values:     1
+[libsc]    Mean value (std. dev.):         0.426703 (0 = 0%)
+[libsc]    Minimum attained at rank     0: 0.426703
+[libsc]    Maximum attained at rank     0: 0.426703
+[libsc] Statistics for REGRID_TAGGING
+[libsc]    Global number of values:     1
+[libsc]    Mean value (std. dev.):         0.700234 (0 = 0%)
+[libsc]    Minimum attained at rank     0: 0.700234
+[libsc]    Maximum attained at rank     0: 0.700234
+[libsc] Statistics for TIMESYNC
+[libsc]    Global number of values:     1
+[libsc]    Mean value (std. dev.):         0 (0)
+[libsc]    Minimum attained at rank     0: 0
+[libsc]    Maximum attained at rank     0: 0
+[libsc] Statistics for GHOSTPATCH_BUILD
+[libsc]    Global number of values:     1
+[libsc]    Mean value (std. dev.):         0.0091833 (0 = 0%)
+[libsc]    Minimum attained at rank     0: 0.0091833
+[libsc]    Maximum attained at rank     0: 0.0091833
+[libsc] Statistics for PARTITION
+[libsc]    Global number of values:     1
+[libsc]    Mean value (std. dev.):         1.23503 (0 = 0%)
+[libsc]    Minimum attained at rank     0: 1.23503
+[libsc]    Maximum attained at rank     0: 1.23503
+[libsc] Statistics for PARTITION_BUILD
+[libsc]    Global number of values:     1
+[libsc]    Mean value (std. dev.):         1.22148 (0 = 0%)
+[libsc]    Minimum attained at rank     0: 1.22148
+[libsc]    Maximum attained at rank     0: 1.22148
+[libsc] Statistics for ADVANCE_STEP2
+[libsc]    Global number of values:     1
+[libsc]    Mean value (std. dev.):         341.609 (0 = 0%)
+[libsc]    Minimum attained at rank     0: 341.609
+[libsc]    Maximum attained at rank     0: 341.609
+[libsc] Statistics for ADVANCE_B4STEP2
+[libsc]    Global number of values:     1
+[libsc]    Mean value (std. dev.):         0 (0)
+[libsc]    Minimum attained at rank     0: 0
+[libsc]    Maximum attained at rank     0: 0
+[libsc] Statistics for GHOSTFILL_COPY
+[libsc]    Global number of values:     1
+[libsc]    Mean value (std. dev.):         95.0867 (0 = 0%)
+[libsc]    Minimum attained at rank     0: 95.0867
+[libsc]    Maximum attained at rank     0: 95.0867
+[libsc] Statistics for GHOSTFILL_AVERAGE
+[libsc]    Global number of values:     1
+[libsc]    Mean value (std. dev.):         9.55667 (0 = 0%)
+[libsc]    Minimum attained at rank     0: 9.55667
+[libsc]    Maximum attained at rank     0: 9.55667
+[libsc] Statistics for GHOSTFILL_INTERP
+[libsc]    Global number of values:     1
+[libsc]    Mean value (std. dev.):         6.08722 (0 = 0%)
+[libsc]    Minimum attained at rank     0: 6.08722
+[libsc]    Maximum attained at rank     0: 6.08722
+[libsc] Statistics for GHOSTFILL_PHYSBC
+[libsc]    Global number of values:     1
+[libsc]    Mean value (std. dev.):         1.65454 (0 = 0%)
+[libsc]    Minimum attained at rank     0: 1.65454
+[libsc]    Maximum attained at rank     0: 1.65454
+[libsc] Statistics for GHOSTFILL_STEP1
+[libsc]    Global number of values:     1
+[libsc]    Mean value (std. dev.):         0.12005 (0 = 0%)
+[libsc]    Minimum attained at rank     0: 0.12005
+[libsc]    Maximum attained at rank     0: 0.12005
+[libsc] Statistics for GHOSTFILL_STEP2
+[libsc]    Global number of values:     1
+[libsc]    Mean value (std. dev.):         111.562 (0 = 0%)
+[libsc]    Minimum attained at rank     0: 111.562
+[libsc]    Maximum attained at rank     0: 111.562
+[libsc] Statistics for GHOSTFILL_STEP3
+[libsc]    Global number of values:     1
+[libsc]    Mean value (std. dev.):         0.716562 (0 = 0%)
+[libsc]    Minimum attained at rank     0: 0.716562
+[libsc]    Maximum attained at rank     0: 0.716562
+[libsc] Statistics for NEIGHBOR_SEARCH
+[libsc]    Global number of values:     1
+[libsc]    Mean value (std. dev.):         2.35497 (0 = 0%)
+[libsc]    Minimum attained at rank     0: 2.35497
+[libsc]    Maximum attained at rank     0: 2.35497
+[libsc] Statistics for FCLAW2D_TIMER_LOCAL_COMM
+[libsc]    Global number of values:     1
+[libsc]    Mean value (std. dev.):         457.819 (0 = 0%)
+[libsc]    Minimum attained at rank     0: 457.819
+[libsc]    Maximum attained at rank     0: 457.819
+[libsc] Statistics for FCLAW2D_TIMER_GLOBAL_COMM
+[libsc]    Global number of values:     1
+[libsc]    Mean value (std. dev.):         1.15837 (0 = 0%)
+[libsc]    Minimum attained at rank     0: 1.15837
+[libsc]    Maximum attained at rank     0: 1.15837
+[libsc] Statistics for CUDA_ALLOCATE
+[libsc]    Global number of values:     1
+[libsc]    Mean value (std. dev.):         0 (0)
+[libsc]    Minimum attained at rank     0: 0
+[libsc]    Maximum attained at rank     0: 0
+[libsc] Statistics for CUDA_MEMCOPY_H2H
+[libsc]    Global number of values:     1
+[libsc]    Mean value (std. dev.):         35.7853 (0 = 0%)
+[libsc]    Minimum attained at rank     0: 35.7853
+[libsc]    Maximum attained at rank     0: 35.7853
+[libsc] Statistics for CUDA_MEMCOPY_H2D
+[libsc]    Global number of values:     1
+[libsc]    Mean value (std. dev.):         10.9846 (0 = 0%)
+[libsc]    Minimum attained at rank     0: 10.9846
+[libsc]    Maximum attained at rank     0: 10.9846
+[libsc] Statistics for CUDA_MEMCOPY_D2H
+[libsc]    Global number of values:     1
+[libsc]    Mean value (std. dev.):         10.4854 (0 = 0%)
+[libsc]    Minimum attained at rank     0: 10.4854
+[libsc]    Maximum attained at rank     0: 10.4854
+[libsc] Procs 1 advance 600 342.976 exchange 9894 112.419 regrid 600 294 2.30003
+[libsc] Max/P 1 advance 600 342.976 exchange 9894 112.419 regrid 600 294 2.30003

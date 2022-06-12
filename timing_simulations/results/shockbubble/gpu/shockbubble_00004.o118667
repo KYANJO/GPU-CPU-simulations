@@ -1,0 +1,840 @@
+[gpu102:238809] mca: base: component_find: unable to open /cm/shared/apps/openmpi/gcc/64/1.10.7/lib64/openmpi/mca_mtl_psm: libpsm_infinipath.so.1: cannot open shared object file: No such file or directory (ignored)
+[gpu102:238813] mca: base: component_find: unable to open /cm/shared/apps/openmpi/gcc/64/1.10.7/lib64/openmpi/mca_mtl_psm: libpsm_infinipath.so.1: cannot open shared object file: No such file or directory (ignored)
+[gpu102:238811] mca: base: component_find: unable to open /cm/shared/apps/openmpi/gcc/64/1.10.7/lib64/openmpi/mca_mtl_psm: libpsm_infinipath.so.1: cannot open shared object file: No such file or directory (ignored)
+--------------------------------------------------------------------------
+WARNING: No preset parameters were found for the device that Open MPI
+detected:
+
+  Local host:            gpu102
+  Device name:           mlx5_0
+  Device vendor ID:      0x02c9
+  Device vendor part ID: 4123
+
+Default device parameters will be used, which may result in lower
+performance.  You can edit any of the files specified by the
+btl_openib_device_param_files MCA parameter to set values for your
+device.
+
+NOTE: You can turn off this warning by setting the MCA parameter
+      btl_openib_warn_no_device_params_found to 0.
+--------------------------------------------------------------------------
+[gpu102:238815] mca: base: component_find: unable to open /cm/shared/apps/openmpi/gcc/64/1.10.7/lib64/openmpi/mca_mtl_psm: libpsm_infinipath.so.1: cannot open shared object file: No such file or directory (ignored)
+--------------------------------------------------------------------------
+WARNING: There was an error initializing an OpenFabrics device.
+
+  Local host:   gpu102
+  Local device: mlx5_0
+--------------------------------------------------------------------------
+[libsc] This is libsc 2.8.1.57-a813
+[p4est] This is p4est 2.8.20
+[fclaw] This is ForestClaw 0.1.4880-4dae
+[fclaw] CPP                      /cm/shared/apps/openmpi/gcc/64/1.10.7/bin/mpicc -E
+[fclaw] CPPFLAGS                 
+[fclaw] F77                      
+[fclaw] FFLAGS                   -O2 -g -Wall -Wno-unused-dummy-argument -cpp 
+[fclaw] CC                       /cm/shared/apps/openmpi/gcc/64/1.10.7/bin/mpicc
+[fclaw] CFLAGS                   -O2 -g -Wall -pedantic -std=c99 
+[fclaw] CXX                      /cm/shared/apps/openmpi/gcc/64/1.10.7/bin/mpicxx
+[fclaw] CXXFLAGS                 
+[fclaw] LDFLAGS                  
+[fclaw] FLIBS                    
+[fclaw] LIBS                     ;/usr/lib64/libz.so;m
+[fclaw] Options:
+[fclaw]    help                                 false
+[fclaw]    version                              false
+[fclaw]    print-options                        false
+[fclaw]    verbosity                            production
+[fclaw]    lib-verbosity                        essential
+[fclaw]    initial_dt                           0.0075
+[fclaw]    max_cfl                              1
+[fclaw]    desired_cfl                          0.9
+[fclaw]    reduce-cfl                           true
+[fclaw]    use_fixed_dt                         true
+[fclaw]    outstyle                             1
+[fclaw]    tfinal                               3
+[fclaw]    nout                                 10
+[fclaw]    nstep                                1
+[fclaw]    advance-one-step                     false
+[fclaw]    outstyle-uses-maxlevel               true
+[fclaw]    subcycle                             true
+[fclaw]    weighted_partition                   true
+[fclaw]    time-sync                            false
+[fclaw]    flux-correction                      true
+[fclaw]    fluctuation-correction               true
+[fclaw]    output                               false
+[fclaw]    output-gauges                        false
+[fclaw]    gauge-buffer-length                  1
+[fclaw]    tikz-out                             false
+[fclaw]    tikz-figsize                         4 1
+[fclaw]    tikz-plot-prefix                     plot
+[fclaw]    tikz-plot-suffix                     png
+[fclaw]    tikz-mesh-only                       false
+[fclaw]    tikz-plot-fig                        true
+[fclaw]    prefix                               fort
+[fclaw]    vtkspace                             0
+[fclaw]    init_ghostcell                       false
+[fclaw]    minlevel                             0
+[fclaw]    maxlevel                             5
+[fclaw]    regrid_interval                      1
+[fclaw]    refratio                             2
+[fclaw]    smooth-refine                        true
+[fclaw]    smooth-level                         0
+[fclaw]    coarsen-delay                        0
+[fclaw]    refine_threshold                     0.5
+[fclaw]    coarsen_threshold                    0.25
+[fclaw]    run-user-diagnostics                 false
+[fclaw]    compute-error                        false
+[fclaw]    conservation-check                   false
+[fclaw]    report-timing                        true
+[fclaw]    report-timing-verbosity              all
+[fclaw]    ghost_patch_pack_area                true
+[fclaw]    ghost_patch_pack_extra               false
+[fclaw]    ghost_patch_pack_numextrafields      0
+[fclaw]    trapfpe                              false
+[fclaw]    mpi_debug                            false
+[fclaw]    ax                                   0
+[fclaw]    bx                                   1
+[fclaw]    ay                                   0
+[fclaw]    by                                   1
+[fclaw]    az                                   0
+[fclaw]    bz                                   1
+[fclaw]    manifold                             false
+[fclaw]    mi                                   4
+[fclaw]    mj                                   1
+[fclaw]    periodic_x                           false
+[fclaw]    periodic_y                           false
+[fclaw]    scale                                1 1 1
+[fclaw]    shift                                0 0 0
+[fclaw]    phi                                  0
+[fclaw]    theta                                0
+[fclaw]    clawpatch:mx                         32
+[fclaw]    clawpatch:my                         32
+[fclaw]    clawpatch:maux                       1
+[fclaw]    clawpatch:mbc                        2
+[fclaw]    clawpatch:meqn                       4
+[fclaw]    clawpatch:rhs-fields                 1
+[fclaw]    clawpatch:interp_stencil_width       3
+[fclaw]    clawpatch:ghost_patch_pack_aux       false
+[fclaw]    clawpatch:save-aux                   false
+[fclaw]    clawpatch:refinement-criteria        value
+[fclaw]    cudaclaw:order                       2 2
+[fclaw]    cudaclaw:mcapa                       0
+[fclaw]    cudaclaw:src_term                    false
+[fclaw]    cudaclaw:use-fwaves                  false
+[fclaw]    cudaclaw:mwaves                      4
+[fclaw]    cudaclaw:buffer-len                  4096
+[fclaw]    cudaclaw:mthlim                      1 1 1 1
+[fclaw]    cudaclaw:mthbc                       1 1 3 1
+[fclaw]    cudaclaw:ascii-out                   true
+[fclaw]    cudaclaw:vtk-out                     false
+[fclaw]    clawpack46:order                     2 2
+[fclaw]    clawpack46:mcapa                     0
+[fclaw]    clawpack46:src_term                  false
+[fclaw]    clawpack46:use-fwaves                false
+[fclaw]    clawpack46:mwaves                    4
+[fclaw]    clawpack46:mthlim                    1 1 1 1
+[fclaw]    clawpack46:mthbc                     1 1 3 1
+[fclaw]    clawpack46:ascii-out                 true
+[fclaw]    clawpack46:vtk-out                   false
+[fclaw]    user:idisc                           2
+[fclaw]    user:gamma                           1.4
+[fclaw]    user:x0                              0.5
+[fclaw]    user:y0                              0
+[fclaw]    user:r0                              0.2
+[fclaw]    user:rhoin                           0.1
+[fclaw]    user:pinf                            5
+[fclaw]    user:claw-version                    4
+[fclaw]    user:cuda                            true
+[fclaw] Arguments: none
+[p4est 2] Local minimum/maximum levels:  0  0
+[p4est 2] Patches on level  0:         1
+[p4est 3] Local minimum/maximum levels:  0  0
+[p4est 3] Patches on level  0:         1
+[p4est 0] Local minimum/maximum levels:  0  0
+[p4est] Global minimum/maximum levels:  0  0
+[p4est 0] Patches on level  0:         1
+[fclaw] Block-size (FC2D_CUDACLAW_BLOCK_SIZE) set to 128
+[p4est 1] Local minimum/maximum levels:  0  0
+[p4est 1] Patches on level  0:         1
+[fclaw] Rank  0 (gpu102) assigned to GPU 0  (Tesla V100-PCIE-16GB)
+[fclaw] Rank  1 (gpu102) assigned to GPU 1  (Tesla V100-PCIE-16GB)
+[fclaw] Rank  2 (gpu102) assigned to GPU 0  (Tesla V100-PCIE-16GB)
+[fclaw] Rank  3 (gpu102) assigned to GPU 1  (Tesla V100-PCIE-16GB)
+[fclaw] Max threads set to 0
+[gpu102:238774] 3 more processes have sent help message help-mpi-btl-openib.txt / no device params found
+[gpu102:238774] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+[gpu102:238774] 3 more processes have sent help message help-mpi-btl-openib.txt / error in device init
+[fclaw] Time step    0  at time   0.00000000e+00
+
+[fclaw] Level 0 (4-5) step     1 : dt =    7.500e-03; maxcfl (step) = 136374803.494; Final time =       0.0075
+[fclaw]    WARNING : Maximum CFL exceeded; retaking time step
+[fclaw] Level 0 (4-5) step     2 : dt =    7.500e-03; maxcfl (step) = 526544164935618156447491263376054550528.000; Final time =       0.0150
+[fclaw]    WARNING : Maximum CFL exceeded; retaking time step
+[fclaw] Level 0 (3-5) step     3 : dt =    7.500e-03; maxcfl (step) = 61302275474.094; Final time =       0.0225
+[fclaw]    WARNING : Maximum CFL exceeded; retaking time step
+[fclaw] Level 0 (3-5) step     4 : dt =    7.500e-03; maxcfl (step) =   34.988; Final time =       0.0300
+[fclaw]    WARNING : Maximum CFL exceeded; retaking time step
+[fclaw] Level 0 (2-5) step     5 : dt =    7.500e-03; maxcfl (step) =   36.236; Final time =       0.0375
+[fclaw]    WARNING : Maximum CFL exceeded; retaking time step
+[fclaw] Level 0 (2-5) step     6 : dt =    7.500e-03; maxcfl (step) =   35.677; Final time =       0.0450
+[fclaw]    WARNING : Maximum CFL exceeded; retaking time step
+[fclaw] Level 0 (2-5) step     7 : dt =    7.500e-03; maxcfl (step) =    3.055; Final time =       0.0525
+[fclaw]    WARNING : Maximum CFL exceeded; retaking time step
+[fclaw] Level 0 (2-5) step     8 : dt =    7.500e-03; maxcfl (step) =    3.055; Final time =       0.0600
+[fclaw]    WARNING : Maximum CFL exceeded; retaking time step
+[fclaw] Level 0 (1-5) step     9 : dt =    7.500e-03; maxcfl (step) =    3.055; Final time =       0.0675
+[fclaw]    WARNING : Maximum CFL exceeded; retaking time step
+[fclaw] Level 0 (1-5) step    10 : dt =    7.500e-03; maxcfl (step) =    3.055; Final time =       0.0750
+[fclaw]    WARNING : Maximum CFL exceeded; retaking time step
+[fclaw] Level 0 (0-5) step    11 : dt =    7.500e-03; maxcfl (step) =    3.055; Final time =       0.0825
+[fclaw]    WARNING : Maximum CFL exceeded; retaking time step
+[fclaw] Level 0 (0-5) step    12 : dt =    7.500e-03; maxcfl (step) =    3.055; Final time =       0.0900
+[fclaw]    WARNING : Maximum CFL exceeded; retaking time step
+[fclaw] Level 0 (0-5) step    13 : dt =    7.500e-03; maxcfl (step) =    3.055; Final time =       0.0975
+[fclaw]    WARNING : Maximum CFL exceeded; retaking time step
+[fclaw] Level 0 (0-4) step    14 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       0.1050
+[fclaw] Level 0 (0-3) step    15 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       0.1125
+[fclaw] Level 0 (0-2) step    16 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       0.1200
+[fclaw] Level 0 (0-1) step    17 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       0.1275
+[fclaw] Level 0 (0-0) step    18 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       0.1350
+[fclaw] Level 0 (0-0) step    19 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       0.1425
+[fclaw] Level 0 (0-0) step    20 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       0.1500
+[fclaw] Level 0 (0-0) step    21 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       0.1575
+[fclaw] Level 0 (0-0) step    22 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       0.1650
+[fclaw] Level 0 (0-0) step    23 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       0.1725
+[fclaw] Level 0 (0-0) step    24 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       0.1800
+[fclaw] Level 0 (0-0) step    25 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       0.1875
+[fclaw] Level 0 (0-0) step    26 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       0.1950
+[fclaw] Level 0 (0-0) step    27 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       0.2025
+[fclaw] Level 0 (0-0) step    28 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       0.2100
+[fclaw] Level 0 (0-0) step    29 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       0.2175
+[fclaw] Level 0 (0-0) step    30 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       0.2250
+[fclaw] Level 0 (0-0) step    31 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       0.2325
+[fclaw] Level 0 (0-0) step    32 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       0.2400
+[fclaw] Level 0 (0-0) step    33 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       0.2475
+[fclaw] Level 0 (0-0) step    34 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       0.2550
+[fclaw] Level 0 (0-0) step    35 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       0.2625
+[fclaw] Level 0 (0-0) step    36 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       0.2700
+[fclaw] Level 0 (0-0) step    37 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       0.2775
+[fclaw] Level 0 (0-0) step    38 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       0.2850
+[fclaw] Level 0 (0-0) step    39 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       0.2925
+[fclaw] Level 0 (0-0) step    40 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       0.3000
+[fclaw] Time step    1  at time   3.00000000e-01
+
+[fclaw] Level 0 (0-0) step    41 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       0.3075
+[fclaw] Level 0 (0-0) step    42 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       0.3150
+[fclaw] Level 0 (0-0) step    43 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       0.3225
+[fclaw] Level 0 (0-0) step    44 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       0.3300
+[fclaw] Level 0 (0-0) step    45 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       0.3375
+[fclaw] Level 0 (0-0) step    46 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       0.3450
+[fclaw] Level 0 (0-0) step    47 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       0.3525
+[fclaw] Level 0 (0-0) step    48 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       0.3600
+[fclaw] Level 0 (0-0) step    49 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       0.3675
+[fclaw] Level 0 (0-0) step    50 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       0.3750
+[fclaw] Level 0 (0-0) step    51 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       0.3825
+[fclaw] Level 0 (0-0) step    52 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       0.3900
+[fclaw] Level 0 (0-0) step    53 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       0.3975
+[fclaw] Level 0 (0-0) step    54 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       0.4050
+[fclaw] Level 0 (0-0) step    55 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       0.4125
+[fclaw] Level 0 (0-0) step    56 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       0.4200
+[fclaw] Level 0 (0-0) step    57 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       0.4275
+[fclaw] Level 0 (0-0) step    58 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       0.4350
+[fclaw] Level 0 (0-0) step    59 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       0.4425
+[fclaw] Level 0 (0-0) step    60 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       0.4500
+[fclaw] Level 0 (0-0) step    61 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       0.4575
+[fclaw] Level 0 (0-0) step    62 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       0.4650
+[fclaw] Level 0 (0-0) step    63 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       0.4725
+[fclaw] Level 0 (0-0) step    64 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       0.4800
+[fclaw] Level 0 (0-0) step    65 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       0.4875
+[fclaw] Level 0 (0-0) step    66 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       0.4950
+[fclaw] Level 0 (0-0) step    67 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       0.5025
+[fclaw] Level 0 (0-0) step    68 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       0.5100
+[fclaw] Level 0 (0-0) step    69 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       0.5175
+[fclaw] Level 0 (0-0) step    70 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       0.5250
+[fclaw] Level 0 (0-0) step    71 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       0.5325
+[fclaw] Level 0 (0-0) step    72 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       0.5400
+[fclaw] Level 0 (0-0) step    73 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       0.5475
+[fclaw] Level 0 (0-0) step    74 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       0.5550
+[fclaw] Level 0 (0-0) step    75 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       0.5625
+[fclaw] Level 0 (0-0) step    76 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       0.5700
+[fclaw] Level 0 (0-0) step    77 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       0.5775
+[fclaw] Level 0 (0-0) step    78 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       0.5850
+[fclaw] Level 0 (0-0) step    79 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       0.5925
+[fclaw] Level 0 (0-0) step    80 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       0.6000
+[fclaw] Level 0 (0-0) step    81 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       0.6075
+[fclaw] Time step    2  at time   6.07500000e-01
+
+[fclaw] Level 0 (0-0) step    82 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       0.6150
+[fclaw] Level 0 (0-0) step    83 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       0.6225
+[fclaw] Level 0 (0-0) step    84 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       0.6300
+[fclaw] Level 0 (0-0) step    85 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       0.6375
+[fclaw] Level 0 (0-0) step    86 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       0.6450
+[fclaw] Level 0 (0-0) step    87 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       0.6525
+[fclaw] Level 0 (0-0) step    88 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       0.6600
+[fclaw] Level 0 (0-0) step    89 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       0.6675
+[fclaw] Level 0 (0-0) step    90 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       0.6750
+[fclaw] Level 0 (0-0) step    91 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       0.6825
+[fclaw] Level 0 (0-0) step    92 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       0.6900
+[fclaw] Level 0 (0-0) step    93 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       0.6975
+[fclaw] Level 0 (0-0) step    94 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       0.7050
+[fclaw] Level 0 (0-0) step    95 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       0.7125
+[fclaw] Level 0 (0-0) step    96 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       0.7200
+[fclaw] Level 0 (0-0) step    97 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       0.7275
+[fclaw] Level 0 (0-0) step    98 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       0.7350
+[fclaw] Level 0 (0-0) step    99 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       0.7425
+[fclaw] Level 0 (0-0) step   100 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       0.7500
+[fclaw] Level 0 (0-0) step   101 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       0.7575
+[fclaw] Level 0 (0-0) step   102 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       0.7650
+[fclaw] Level 0 (0-0) step   103 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       0.7725
+[fclaw] Level 0 (0-0) step   104 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       0.7800
+[fclaw] Level 0 (0-0) step   105 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       0.7875
+[fclaw] Level 0 (0-0) step   106 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       0.7950
+[fclaw] Level 0 (0-0) step   107 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       0.8025
+[fclaw] Level 0 (0-0) step   108 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       0.8100
+[fclaw] Level 0 (0-0) step   109 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       0.8175
+[fclaw] Level 0 (0-0) step   110 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       0.8250
+[fclaw] Level 0 (0-0) step   111 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       0.8325
+[fclaw] Level 0 (0-0) step   112 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       0.8400
+[fclaw] Level 0 (0-0) step   113 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       0.8475
+[fclaw] Level 0 (0-0) step   114 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       0.8550
+[fclaw] Level 0 (0-0) step   115 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       0.8625
+[fclaw] Level 0 (0-0) step   116 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       0.8700
+[fclaw] Level 0 (0-0) step   117 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       0.8775
+[fclaw] Level 0 (0-0) step   118 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       0.8850
+[fclaw] Level 0 (0-0) step   119 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       0.8925
+[fclaw] Level 0 (0-0) step   120 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       0.9000
+[fclaw] Level 0 (0-0) step   121 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       0.9075
+[fclaw] Level 0 (0-0) step   122 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       0.9150
+[fclaw] Time step    3  at time   9.15000000e-01
+
+[fclaw] Level 0 (0-0) step   123 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       0.9225
+[fclaw] Level 0 (0-0) step   124 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       0.9300
+[fclaw] Level 0 (0-0) step   125 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       0.9375
+[fclaw] Level 0 (0-0) step   126 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       0.9450
+[fclaw] Level 0 (0-0) step   127 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       0.9525
+[fclaw] Level 0 (0-0) step   128 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       0.9600
+[fclaw] Level 0 (0-0) step   129 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       0.9675
+[fclaw] Level 0 (0-0) step   130 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       0.9750
+[fclaw] Level 0 (0-0) step   131 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       0.9825
+[fclaw] Level 0 (0-0) step   132 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       0.9900
+[fclaw] Level 0 (0-0) step   133 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       0.9975
+[fclaw] Level 0 (0-0) step   134 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       1.0050
+[fclaw] Level 0 (0-0) step   135 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       1.0125
+[fclaw] Level 0 (0-0) step   136 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       1.0200
+[fclaw] Level 0 (0-0) step   137 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       1.0275
+[fclaw] Level 0 (0-0) step   138 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       1.0350
+[fclaw] Level 0 (0-0) step   139 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       1.0425
+[fclaw] Level 0 (0-0) step   140 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       1.0500
+[fclaw] Level 0 (0-0) step   141 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       1.0575
+[fclaw] Level 0 (0-0) step   142 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       1.0650
+[fclaw] Level 0 (0-0) step   143 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       1.0725
+[fclaw] Level 0 (0-0) step   144 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       1.0800
+[fclaw] Level 0 (0-0) step   145 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       1.0875
+[fclaw] Level 0 (0-0) step   146 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       1.0950
+[fclaw] Level 0 (0-0) step   147 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       1.1025
+[fclaw] Level 0 (0-0) step   148 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       1.1100
+[fclaw] Level 0 (0-0) step   149 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       1.1175
+[fclaw] Level 0 (0-0) step   150 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       1.1250
+[fclaw] Level 0 (0-0) step   151 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       1.1325
+[fclaw] Level 0 (0-0) step   152 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       1.1400
+[fclaw] Level 0 (0-0) step   153 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       1.1475
+[fclaw] Level 0 (0-0) step   154 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       1.1550
+[fclaw] Level 0 (0-0) step   155 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       1.1625
+[fclaw] Level 0 (0-0) step   156 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       1.1700
+[fclaw] Level 0 (0-0) step   157 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       1.1775
+[fclaw] Level 0 (0-0) step   158 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       1.1850
+[fclaw] Level 0 (0-0) step   159 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       1.1925
+[fclaw] Level 0 (0-0) step   160 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       1.2000
+[fclaw] Level 0 (0-0) step   161 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       1.2075
+[fclaw] Level 0 (0-0) step   162 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       1.2150
+[fclaw] Time step    4  at time   1.21500000e+00
+
+[fclaw] Level 0 (0-0) step   163 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       1.2225
+[fclaw] Level 0 (0-0) step   164 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       1.2300
+[fclaw] Level 0 (0-0) step   165 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       1.2375
+[fclaw] Level 0 (0-0) step   166 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       1.2450
+[fclaw] Level 0 (0-0) step   167 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       1.2525
+[fclaw] Level 0 (0-0) step   168 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       1.2600
+[fclaw] Level 0 (0-0) step   169 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       1.2675
+[fclaw] Level 0 (0-0) step   170 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       1.2750
+[fclaw] Level 0 (0-0) step   171 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       1.2825
+[fclaw] Level 0 (0-0) step   172 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       1.2900
+[fclaw] Level 0 (0-0) step   173 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       1.2975
+[fclaw] Level 0 (0-0) step   174 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       1.3050
+[fclaw] Level 0 (0-0) step   175 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       1.3125
+[fclaw] Level 0 (0-0) step   176 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       1.3200
+[fclaw] Level 0 (0-0) step   177 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       1.3275
+[fclaw] Level 0 (0-0) step   178 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       1.3350
+[fclaw] Level 0 (0-0) step   179 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       1.3425
+[fclaw] Level 0 (0-0) step   180 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       1.3500
+[fclaw] Level 0 (0-0) step   181 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       1.3575
+[fclaw] Level 0 (0-0) step   182 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       1.3650
+[fclaw] Level 0 (0-0) step   183 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       1.3725
+[fclaw] Level 0 (0-0) step   184 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       1.3800
+[fclaw] Level 0 (0-0) step   185 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       1.3875
+[fclaw] Level 0 (0-0) step   186 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       1.3950
+[fclaw] Level 0 (0-0) step   187 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       1.4025
+[fclaw] Level 0 (0-0) step   188 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       1.4100
+[fclaw] Level 0 (0-0) step   189 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       1.4175
+[fclaw] Level 0 (0-0) step   190 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       1.4250
+[fclaw] Level 0 (0-0) step   191 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       1.4325
+[fclaw] Level 0 (0-0) step   192 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       1.4400
+[fclaw] Level 0 (0-0) step   193 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       1.4475
+[fclaw] Level 0 (0-0) step   194 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       1.4550
+[fclaw] Level 0 (0-0) step   195 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       1.4625
+[fclaw] Level 0 (0-0) step   196 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       1.4700
+[fclaw] Level 0 (0-0) step   197 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       1.4775
+[fclaw] Level 0 (0-0) step   198 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       1.4850
+[fclaw] Level 0 (0-0) step   199 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       1.4925
+[fclaw] Level 0 (0-0) step   200 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       1.5000
+[fclaw] Level 0 (0-0) step   201 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       1.5075
+[fclaw] Level 0 (0-0) step   202 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       1.5150
+[fclaw] Time step    5  at time   1.51500000e+00
+
+[fclaw] Level 0 (0-0) step   203 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       1.5225
+[fclaw] Level 0 (0-0) step   204 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       1.5300
+[fclaw] Level 0 (0-0) step   205 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       1.5375
+[fclaw] Level 0 (0-0) step   206 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       1.5450
+[fclaw] Level 0 (0-0) step   207 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       1.5525
+[fclaw] Level 0 (0-0) step   208 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       1.5600
+[fclaw] Level 0 (0-0) step   209 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       1.5675
+[fclaw] Level 0 (0-0) step   210 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       1.5750
+[fclaw] Level 0 (0-0) step   211 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       1.5825
+[fclaw] Level 0 (0-0) step   212 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       1.5900
+[fclaw] Level 0 (0-0) step   213 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       1.5975
+[fclaw] Level 0 (0-0) step   214 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       1.6050
+[fclaw] Level 0 (0-0) step   215 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       1.6125
+[fclaw] Level 0 (0-0) step   216 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       1.6200
+[fclaw] Level 0 (0-0) step   217 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       1.6275
+[fclaw] Level 0 (0-0) step   218 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       1.6350
+[fclaw] Level 0 (0-0) step   219 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       1.6425
+[fclaw] Level 0 (0-0) step   220 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       1.6500
+[fclaw] Level 0 (0-0) step   221 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       1.6575
+[fclaw] Level 0 (0-0) step   222 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       1.6650
+[fclaw] Level 0 (0-0) step   223 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       1.6725
+[fclaw] Level 0 (0-0) step   224 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       1.6800
+[fclaw] Level 0 (0-0) step   225 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       1.6875
+[fclaw] Level 0 (0-0) step   226 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       1.6950
+[fclaw] Level 0 (0-0) step   227 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       1.7025
+[fclaw] Level 0 (0-0) step   228 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       1.7100
+[fclaw] Level 0 (0-0) step   229 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       1.7175
+[fclaw] Level 0 (0-0) step   230 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       1.7250
+[fclaw] Level 0 (0-0) step   231 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       1.7325
+[fclaw] Level 0 (0-0) step   232 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       1.7400
+[fclaw] Level 0 (0-0) step   233 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       1.7475
+[fclaw] Level 0 (0-0) step   234 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       1.7550
+[fclaw] Level 0 (0-0) step   235 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       1.7625
+[fclaw] Level 0 (0-0) step   236 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       1.7700
+[fclaw] Level 0 (0-0) step   237 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       1.7775
+[fclaw] Level 0 (0-0) step   238 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       1.7850
+[fclaw] Level 0 (0-0) step   239 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       1.7925
+[fclaw] Level 0 (0-0) step   240 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       1.8000
+[fclaw] Level 0 (0-0) step   241 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       1.8075
+[fclaw] Level 0 (0-0) step   242 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       1.8150
+[fclaw] Time step    6  at time   1.81500000e+00
+
+[fclaw] Level 0 (0-0) step   243 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       1.8225
+[fclaw] Level 0 (0-0) step   244 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       1.8300
+[fclaw] Level 0 (0-0) step   245 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       1.8375
+[fclaw] Level 0 (0-0) step   246 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       1.8450
+[fclaw] Level 0 (0-0) step   247 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       1.8525
+[fclaw] Level 0 (0-0) step   248 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       1.8600
+[fclaw] Level 0 (0-0) step   249 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       1.8675
+[fclaw] Level 0 (0-0) step   250 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       1.8750
+[fclaw] Level 0 (0-0) step   251 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       1.8825
+[fclaw] Level 0 (0-0) step   252 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       1.8900
+[fclaw] Level 0 (0-0) step   253 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       1.8975
+[fclaw] Level 0 (0-0) step   254 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       1.9050
+[fclaw] Level 0 (0-0) step   255 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       1.9125
+[fclaw] Level 0 (0-0) step   256 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       1.9200
+[fclaw] Level 0 (0-0) step   257 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       1.9275
+[fclaw] Level 0 (0-0) step   258 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       1.9350
+[fclaw] Level 0 (0-0) step   259 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       1.9425
+[fclaw] Level 0 (0-0) step   260 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       1.9500
+[fclaw] Level 0 (0-0) step   261 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       1.9575
+[fclaw] Level 0 (0-0) step   262 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       1.9650
+[fclaw] Level 0 (0-0) step   263 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       1.9725
+[fclaw] Level 0 (0-0) step   264 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       1.9800
+[fclaw] Level 0 (0-0) step   265 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       1.9875
+[fclaw] Level 0 (0-0) step   266 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       1.9950
+[fclaw] Level 0 (0-0) step   267 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       2.0025
+[fclaw] Level 0 (0-0) step   268 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       2.0100
+[fclaw] Level 0 (0-0) step   269 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       2.0175
+[fclaw] Level 0 (0-0) step   270 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       2.0250
+[fclaw] Level 0 (0-0) step   271 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       2.0325
+[fclaw] Level 0 (0-0) step   272 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       2.0400
+[fclaw] Level 0 (0-0) step   273 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       2.0475
+[fclaw] Level 0 (0-0) step   274 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       2.0550
+[fclaw] Level 0 (0-0) step   275 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       2.0625
+[fclaw] Level 0 (0-0) step   276 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       2.0700
+[fclaw] Level 0 (0-0) step   277 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       2.0775
+[fclaw] Level 0 (0-0) step   278 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       2.0850
+[fclaw] Level 0 (0-0) step   279 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       2.0925
+[fclaw] Level 0 (0-0) step   280 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       2.1000
+[fclaw] Level 0 (0-0) step   281 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       2.1075
+[fclaw] Level 0 (0-0) step   282 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       2.1150
+[fclaw] Level 0 (0-0) step   283 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       2.1225
+[fclaw] Time step    7  at time   2.12250000e+00
+
+[fclaw] Level 0 (0-0) step   284 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       2.1300
+[fclaw] Level 0 (0-0) step   285 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       2.1375
+[fclaw] Level 0 (0-0) step   286 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       2.1450
+[fclaw] Level 0 (0-0) step   287 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       2.1525
+[fclaw] Level 0 (0-0) step   288 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       2.1600
+[fclaw] Level 0 (0-0) step   289 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       2.1675
+[fclaw] Level 0 (0-0) step   290 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       2.1750
+[fclaw] Level 0 (0-0) step   291 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       2.1825
+[fclaw] Level 0 (0-0) step   292 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       2.1900
+[fclaw] Level 0 (0-0) step   293 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       2.1975
+[fclaw] Level 0 (0-0) step   294 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       2.2050
+[fclaw] Level 0 (0-0) step   295 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       2.2125
+[fclaw] Level 0 (0-0) step   296 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       2.2200
+[fclaw] Level 0 (0-0) step   297 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       2.2275
+[fclaw] Level 0 (0-0) step   298 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       2.2350
+[fclaw] Level 0 (0-0) step   299 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       2.2425
+[fclaw] Level 0 (0-0) step   300 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       2.2500
+[fclaw] Level 0 (0-0) step   301 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       2.2575
+[fclaw] Level 0 (0-0) step   302 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       2.2650
+[fclaw] Level 0 (0-0) step   303 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       2.2725
+[fclaw] Level 0 (0-0) step   304 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       2.2800
+[fclaw] Level 0 (0-0) step   305 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       2.2875
+[fclaw] Level 0 (0-0) step   306 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       2.2950
+[fclaw] Level 0 (0-0) step   307 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       2.3025
+[fclaw] Level 0 (0-0) step   308 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       2.3100
+[fclaw] Level 0 (0-0) step   309 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       2.3175
+[fclaw] Level 0 (0-0) step   310 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       2.3250
+[fclaw] Level 0 (0-0) step   311 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       2.3325
+[fclaw] Level 0 (0-0) step   312 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       2.3400
+[fclaw] Level 0 (0-0) step   313 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       2.3475
+[fclaw] Level 0 (0-0) step   314 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       2.3550
+[fclaw] Level 0 (0-0) step   315 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       2.3625
+[fclaw] Level 0 (0-0) step   316 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       2.3700
+[fclaw] Level 0 (0-0) step   317 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       2.3775
+[fclaw] Level 0 (0-0) step   318 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       2.3850
+[fclaw] Level 0 (0-0) step   319 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       2.3925
+[fclaw] Level 0 (0-0) step   320 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       2.4000
+[fclaw] Level 0 (0-0) step   321 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       2.4075
+[fclaw] Level 0 (0-0) step   322 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       2.4150
+[fclaw] Level 0 (0-0) step   323 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       2.4225
+[fclaw] Level 0 (0-0) step   324 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       2.4300
+[fclaw] Time step    8  at time   2.43000000e+00
+
+[fclaw] Level 0 (0-0) step   325 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       2.4375
+[fclaw] Level 0 (0-0) step   326 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       2.4450
+[fclaw] Level 0 (0-0) step   327 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       2.4525
+[fclaw] Level 0 (0-0) step   328 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       2.4600
+[fclaw] Level 0 (0-0) step   329 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       2.4675
+[fclaw] Level 0 (0-0) step   330 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       2.4750
+[fclaw] Level 0 (0-0) step   331 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       2.4825
+[fclaw] Level 0 (0-0) step   332 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       2.4900
+[fclaw] Level 0 (0-0) step   333 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       2.4975
+[fclaw] Level 0 (0-0) step   334 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       2.5050
+[fclaw] Level 0 (0-0) step   335 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       2.5125
+[fclaw] Level 0 (0-0) step   336 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       2.5200
+[fclaw] Level 0 (0-0) step   337 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       2.5275
+[fclaw] Level 0 (0-0) step   338 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       2.5350
+[fclaw] Level 0 (0-0) step   339 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       2.5425
+[fclaw] Level 0 (0-0) step   340 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       2.5500
+[fclaw] Level 0 (0-0) step   341 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       2.5575
+[fclaw] Level 0 (0-0) step   342 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       2.5650
+[fclaw] Level 0 (0-0) step   343 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       2.5725
+[fclaw] Level 0 (0-0) step   344 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       2.5800
+[fclaw] Level 0 (0-0) step   345 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       2.5875
+[fclaw] Level 0 (0-0) step   346 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       2.5950
+[fclaw] Level 0 (0-0) step   347 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       2.6025
+[fclaw] Level 0 (0-0) step   348 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       2.6100
+[fclaw] Level 0 (0-0) step   349 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       2.6175
+[fclaw] Level 0 (0-0) step   350 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       2.6250
+[fclaw] Level 0 (0-0) step   351 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       2.6325
+[fclaw] Level 0 (0-0) step   352 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       2.6400
+[fclaw] Level 0 (0-0) step   353 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       2.6475
+[fclaw] Level 0 (0-0) step   354 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       2.6550
+[fclaw] Level 0 (0-0) step   355 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       2.6625
+[fclaw] Level 0 (0-0) step   356 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       2.6700
+[fclaw] Level 0 (0-0) step   357 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       2.6775
+[fclaw] Level 0 (0-0) step   358 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       2.6850
+[fclaw] Level 0 (0-0) step   359 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       2.6925
+[fclaw] Level 0 (0-0) step   360 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       2.7000
+[fclaw] Level 0 (0-0) step   361 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       2.7075
+[fclaw] Level 0 (0-0) step   362 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       2.7150
+[fclaw] Level 0 (0-0) step   363 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       2.7225
+[fclaw] Level 0 (0-0) step   364 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       2.7300
+[fclaw] Level 0 (0-0) step   365 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       2.7375
+[fclaw] Time step    9  at time   2.73750000e+00
+
+[fclaw] Level 0 (0-0) step   366 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       2.7450
+[fclaw] Level 0 (0-0) step   367 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       2.7525
+[fclaw] Level 0 (0-0) step   368 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       2.7600
+[fclaw] Level 0 (0-0) step   369 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       2.7675
+[fclaw] Level 0 (0-0) step   370 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       2.7750
+[fclaw] Level 0 (0-0) step   371 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       2.7825
+[fclaw] Level 0 (0-0) step   372 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       2.7900
+[fclaw] Level 0 (0-0) step   373 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       2.7975
+[fclaw] Level 0 (0-0) step   374 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       2.8050
+[fclaw] Level 0 (0-0) step   375 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       2.8125
+[fclaw] Level 0 (0-0) step   376 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       2.8200
+[fclaw] Level 0 (0-0) step   377 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       2.8275
+[fclaw] Level 0 (0-0) step   378 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       2.8350
+[fclaw] Level 0 (0-0) step   379 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       2.8425
+[fclaw] Level 0 (0-0) step   380 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       2.8500
+[fclaw] Level 0 (0-0) step   381 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       2.8575
+[fclaw] Level 0 (0-0) step   382 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       2.8650
+[fclaw] Level 0 (0-0) step   383 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       2.8725
+[fclaw] Level 0 (0-0) step   384 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       2.8800
+[fclaw] Level 0 (0-0) step   385 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       2.8875
+[fclaw] Level 0 (0-0) step   386 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       2.8950
+[fclaw] Level 0 (0-0) step   387 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       2.9025
+[fclaw] Level 0 (0-0) step   388 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       2.9100
+[fclaw] Level 0 (0-0) step   389 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       2.9175
+[fclaw] Level 0 (0-0) step   390 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       2.9250
+[fclaw] Level 0 (0-0) step   391 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       2.9325
+[fclaw] Level 0 (0-0) step   392 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       2.9400
+[fclaw] Level 0 (0-0) step   393 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       2.9475
+[fclaw] Level 0 (0-0) step   394 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       2.9550
+[fclaw] Level 0 (0-0) step   395 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       2.9625
+[fclaw] Level 0 (0-0) step   396 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       2.9700
+[fclaw] Level 0 (0-0) step   397 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       2.9775
+[fclaw] Level 0 (0-0) step   398 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       2.9850
+[fclaw] Level 0 (0-0) step   399 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       2.9925
+[fclaw] Level 0 (0-0) step   400 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       3.0000
+[fclaw] Level 0 (0-0) step   401 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       3.0075
+[fclaw] Level 0 (0-0) step   402 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       3.0150
+[fclaw] Level 0 (0-0) step   403 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       3.0225
+[fclaw] Level 0 (0-0) step   404 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       3.0300
+[fclaw] Level 0 (0-0) step   405 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       3.0375
+[fclaw] Level 0 (0-0) step   406 : dt =    7.500e-03; maxcfl (step) =    0.000; Final time =       3.0450
+[fclaw] Time step   10  at time   3.04500000e+00
+
+[fclaw] Finalizing run
+[libsc] Statistics for   INIT
+[libsc]    Global number of values:       4
+[libsc]    Mean value (std. dev.):           3.25467 (0.0651 = 2%)
+[libsc]    Minimum attained at rank       1: 3.16395
+[libsc]    Maximum attained at rank       0: 3.32387
+[libsc] Statistics for   ADVANCE
+[libsc]    Global number of values:       4
+[libsc]    Mean value (std. dev.):           21.1426 (1.47 = 6.94%)
+[libsc]    Minimum attained at rank       0: 18.779
+[libsc]    Maximum attained at rank       3: 22.3958
+[libsc] Statistics for   ELLIPTIC_SOLVE
+[libsc]    Global number of values:       4
+[libsc]    Mean value (std. dev.):           0 (0)
+[libsc]    Minimum attained at rank       0: 0
+[libsc]    Maximum attained at rank       0: 0
+[libsc] Statistics for   GHOSTFILL
+[libsc]    Global number of values:       4
+[libsc]    Mean value (std. dev.):           3.90633 (0.441 = 11.3%)
+[libsc]    Minimum attained at rank       0: 3.24573
+[libsc]    Maximum attained at rank       2: 4.45964
+[libsc] Statistics for   REGRID
+[libsc]    Global number of values:       4
+[libsc]    Mean value (std. dev.):           3.78848 (0.693 = 18.3%)
+[libsc]    Minimum attained at rank       0: 2.62166
+[libsc]    Maximum attained at rank       2: 4.41032
+[libsc] Statistics for   DIAGNOSTICS
+[libsc]    Global number of values:       4
+[libsc]    Mean value (std. dev.):           2.28545e-05 (5.66e-06 = 24.8%)
+[libsc]    Minimum attained at rank       2: 1.50809e-05
+[libsc]    Maximum attained at rank       3: 3.10654e-05
+[libsc] Statistics for   OUTPUT
+[libsc]    Global number of values:       4
+[libsc]    Mean value (std. dev.):           0 (0)
+[libsc]    Minimum attained at rank       0: 0
+[libsc]    Maximum attained at rank       0: 0
+[libsc] Statistics for   GHOSTPATCH_COMM
+[libsc]    Global number of values:       4
+[libsc]    Mean value (std. dev.):           7.00404 (1.71 = 24.4%)
+[libsc]    Minimum attained at rank       1: 5.60978
+[libsc]    Maximum attained at rank       0: 9.92013
+[libsc] Statistics for   ADAPT_COMM
+[libsc]    Global number of values:       4
+[libsc]    Mean value (std. dev.):           0.0829306 (0.0355 = 42.8%)
+[libsc]    Minimum attained at rank       3: 0.0460712
+[libsc]    Maximum attained at rank       0: 0.137422
+[libsc] Statistics for   PARTITION_COMM
+[libsc]    Global number of values:       4
+[libsc]    Mean value (std. dev.):           1.29781 (0.66 = 50.9%)
+[libsc]    Minimum attained at rank       3: 0.636628
+[libsc]    Maximum attained at rank       0: 2.35543
+[libsc] Statistics for   DIAGNOSTICS_COMM
+[libsc]    Global number of values:       4
+[libsc]    Mean value (std. dev.):           2.25648e-06 (1.3e-07 = 5.74%)
+[libsc]    Minimum attained at rank       1: 2.0368e-06
+[libsc]    Maximum attained at rank       2: 2.37301e-06
+[libsc] Statistics for   CFL_COMM
+[libsc]    Global number of values:       4
+[libsc]    Mean value (std. dev.):           0.111047 (0.0661 = 59.5%)
+[libsc]    Minimum attained at rank       1: 0.017349
+[libsc]    Maximum attained at rank       0: 0.20282
+[libsc] Statistics for   WALLTIME
+[libsc]    Global number of values:       4
+[libsc]    Mean value (std. dev.):           40.6395 (4.16e-06 = 1.02e-05%)
+[libsc]    Minimum attained at rank       2: 40.6395
+[libsc]    Maximum attained at rank       1: 40.6395
+[libsc] Statistics for   UNACCOUNTED
+[libsc]    Global number of values:       4
+[libsc]    Mean value (std. dev.):           0.889496 (0.433 = 48.7%)
+[libsc]    Minimum attained at rank       2: 0.639492
+[libsc]    Maximum attained at rank       0: 1.63949
+[libsc] Statistics for   ADVANCE_STEPS_COUNTER
+[libsc]    Global number of values:       4
+[libsc]    Mean value (std. dev.):           84729.8 (180 = 0.212%)
+[libsc]    Minimum attained at rank       3: 84422
+[libsc]    Maximum attained at rank       1: 84873
+[libsc] Statistics for   ELLIPTIC_GRIDS_COUNTER
+[libsc]    Global number of values:       4
+[libsc]    Mean value (std. dev.):           0 (0)
+[libsc]    Minimum attained at rank       0: 0
+[libsc]    Maximum attained at rank       0: 0
+[libsc] Statistics for   GRIDS_PER_PROC
+[libsc]    Global number of values:       4
+[libsc]    Mean value (std. dev.):           8.5 (1.12 = 13.2%)
+[libsc]    Minimum attained at rank       0: 7
+[libsc]    Maximum attained at rank       3: 10
+[libsc] Statistics for   GRIDS_INTERIOR
+[libsc]    Global number of values:       4
+[libsc]    Mean value (std. dev.):           7 (1.22 = 17.5%)
+[libsc]    Minimum attained at rank       0: 6
+[libsc]    Maximum attained at rank       3: 9
+[libsc] Statistics for   GRIDS_LOCAL_BOUNDARY
+[libsc]    Global number of values:       4
+[libsc]    Mean value (std. dev.):           1.5 (0.5 = 33.3%)
+[libsc]    Minimum attained at rank       0: 1
+[libsc]    Maximum attained at rank       1: 2
+[libsc] Statistics for   GRIDS_REMOTE_BOUNDARY
+[libsc]    Global number of values:       4
+[libsc]    Mean value (std. dev.):           2 (1 = 50%)
+[libsc]    Minimum attained at rank       0: 1
+[libsc]    Maximum attained at rank       1: 3
+[libsc] Statistics for   REGRID_BUILD
+[libsc]    Global number of values:       4
+[libsc]    Mean value (std. dev.):           6.44001 (0.656 = 10.2%)
+[libsc]    Minimum attained at rank       0: 5.38389
+[libsc]    Maximum attained at rank       3: 7.08772
+[libsc] Statistics for   REGRID_TAGGING
+[libsc]    Global number of values:       4
+[libsc]    Mean value (std. dev.):           0.10818 (0.0358 = 33.1%)
+[libsc]    Minimum attained at rank       0: 0.0532031
+[libsc]    Maximum attained at rank       3: 0.145604
+[libsc] Statistics for   TIMESYNC
+[libsc]    Global number of values:       4
+[libsc]    Mean value (std. dev.):           0 (0)
+[libsc]    Minimum attained at rank       0: 0
+[libsc]    Maximum attained at rank       0: 0
+[libsc] Statistics for   GHOSTPATCH_BUILD
+[libsc]    Global number of values:       4
+[libsc]    Mean value (std. dev.):           0.183564 (0.0606 = 33%)
+[libsc]    Minimum attained at rank       3: 0.122328
+[libsc]    Maximum attained at rank       1: 0.245229
+[libsc] Statistics for   PARTITION
+[libsc]    Global number of values:       4
+[libsc]    Mean value (std. dev.):           0.474576 (0.148 = 31.1%)
+[libsc]    Minimum attained at rank       3: 0.228457
+[libsc]    Maximum attained at rank       2: 0.602438
+[libsc] Statistics for   PARTITION_BUILD
+[libsc]    Global number of values:       4
+[libsc]    Mean value (std. dev.):           0.472631 (0.148 = 31.3%)
+[libsc]    Minimum attained at rank       3: 0.226418
+[libsc]    Maximum attained at rank       2: 0.600559
+[libsc] Statistics for   ADVANCE_STEP2
+[libsc]    Global number of values:       4
+[libsc]    Mean value (std. dev.):           21.1057 (1.46 = 6.9%)
+[libsc]    Minimum attained at rank       0: 18.7632
+[libsc]    Maximum attained at rank       3: 22.3498
+[libsc] Statistics for   ADVANCE_B4STEP2
+[libsc]    Global number of values:       4
+[libsc]    Mean value (std. dev.):           0 (0)
+[libsc]    Minimum attained at rank       0: 0
+[libsc]    Maximum attained at rank       0: 0
+[libsc] Statistics for   GHOSTFILL_COPY
+[libsc]    Global number of values:       4
+[libsc]    Mean value (std. dev.):           3.35494 (0.278 = 8.28%)
+[libsc]    Minimum attained at rank       0: 2.95773
+[libsc]    Maximum attained at rank       2: 3.72431
+[libsc] Statistics for   GHOSTFILL_AVERAGE
+[libsc]    Global number of values:       4
+[libsc]    Mean value (std. dev.):           0.198741 (0.0841 = 42.3%)
+[libsc]    Minimum attained at rank       0: 0.059972
+[libsc]    Maximum attained at rank       2: 0.286113
+[libsc] Statistics for   GHOSTFILL_INTERP
+[libsc]    Global number of values:       4
+[libsc]    Mean value (std. dev.):           0.105131 (0.0412 = 39.2%)
+[libsc]    Minimum attained at rank       0: 0.0365907
+[libsc]    Maximum attained at rank       2: 0.144254
+[libsc] Statistics for   GHOSTFILL_PHYSBC
+[libsc]    Global number of values:       4
+[libsc]    Mean value (std. dev.):           0.0689592 (0.00635 = 9.2%)
+[libsc]    Minimum attained at rank       1: 0.059914
+[libsc]    Maximum attained at rank       3: 0.07786
+[libsc] Statistics for   GHOSTFILL_STEP1
+[libsc]    Global number of values:       4
+[libsc]    Mean value (std. dev.):           0.481187 (0.154 = 32.1%)
+[libsc]    Minimum attained at rank       0: 0.326789
+[libsc]    Maximum attained at rank       1: 0.635981
+[libsc] Statistics for   GHOSTFILL_STEP2
+[libsc]    Global number of values:       4
+[libsc]    Mean value (std. dev.):           2.71839 (0.247 = 9.07%)
+[libsc]    Minimum attained at rank       0: 2.42508
+[libsc]    Maximum attained at rank       3: 3.02558
+[libsc] Statistics for   GHOSTFILL_STEP3
+[libsc]    Global number of values:       4
+[libsc]    Mean value (std. dev.):           0.528906 (0.158 = 29.9%)
+[libsc]    Minimum attained at rank       3: 0.370298
+[libsc]    Maximum attained at rank       2: 0.700521
+[libsc] Statistics for   NEIGHBOR_SEARCH
+[libsc]    Global number of values:       4
+[libsc]    Mean value (std. dev.):           0.0647492 (0.012 = 18.5%)
+[libsc]    Minimum attained at rank       0: 0.0447744
+[libsc]    Maximum attained at rank       2: 0.0766577
+[libsc] Statistics for   FCLAW2D_TIMER_LOCAL_COMM
+[libsc]    Global number of values:       4
+[libsc]    Mean value (std. dev.):           32.1437 (2.39 = 7.43%)
+[libsc]    Minimum attained at rank       0: 28.0237
+[libsc]    Maximum attained at rank       3: 33.768
+[libsc] Statistics for   FCLAW2D_TIMER_GLOBAL_COMM
+[libsc]    Global number of values:       4
+[libsc]    Mean value (std. dev.):           8.49583 (2.39 = 28.1%)
+[libsc]    Minimum attained at rank       3: 6.8715
+[libsc]    Maximum attained at rank       0: 12.6158
+[libsc] Statistics for   CUDA_ALLOCATE
+[libsc]    Global number of values:       4
+[libsc]    Mean value (std. dev.):           0 (0)
+[libsc]    Minimum attained at rank       0: 0
+[libsc]    Maximum attained at rank       0: 0
+[libsc] Statistics for   CUDA_MEMCOPY_H2H
+[libsc]    Global number of values:       4
+[libsc]    Mean value (std. dev.):           1.92906 (0.0104 = 0.54%)
+[libsc]    Minimum attained at rank       1: 1.91899
+[libsc]    Maximum attained at rank       0: 1.94429
+[libsc] Statistics for   CUDA_MEMCOPY_H2D
+[libsc]    Global number of values:       4
+[libsc]    Mean value (std. dev.):           0.531269 (0.00982 = 1.85%)
+[libsc]    Minimum attained at rank       0: 0.514502
+[libsc]    Maximum attained at rank       3: 0.538659
+[libsc] Statistics for   CUDA_MEMCOPY_D2H
+[libsc]    Global number of values:       4
+[libsc]    Mean value (std. dev.):           0.414953 (0.0161 = 3.89%)
+[libsc]    Minimum attained at rank       0: 0.393098
+[libsc]    Maximum attained at rank       2: 0.433486
+[libsc] Statistics for   EXTRA1
+[libsc]    Global number of values:       4
+[libsc]    Mean value (std. dev.):           0.0244747 (0.0119 = 48.4%)
+[libsc]    Minimum attained at rank       0: 0.00487526
+[libsc]    Maximum attained at rank       2: 0.0347297
+[libsc] Statistics for   EXTRA2
+[libsc]    Global number of values:       4
+[libsc]    Mean value (std. dev.):           0 (0)
+[libsc]    Minimum attained at rank       0: 0
+[libsc]    Maximum attained at rank       0: 0
+[libsc] Statistics for   EXTRA3
+[libsc]    Global number of values:       4
+[libsc]    Mean value (std. dev.):           0 (0)
+[libsc]    Minimum attained at rank       0: 0
+[libsc]    Maximum attained at rank       0: 0
+[libsc] Statistics for   EXTRA4
+[libsc]    Global number of values:       4
+[libsc]    Mean value (std. dev.):           0 (0)
+[libsc]    Minimum attained at rank       0: 0
+[libsc]    Maximum attained at rank       0: 0
+[libsc] Procs 4 advance 406 21.1426 exchange 852 3.90633 regrid 406 17 3.78848
+[libsc] Max/P 4 advance 406 22.3958 exchange 852 4.45964 regrid 406 17 4.41032
